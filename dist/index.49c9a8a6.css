@@ -3,10 +3,7 @@
 }
 
 body {
-  grid-auto-rows: auto 1fr auto;
-  min-height: 100vh;
   font-family: Roboto, sans-serif;
-  display: grid;
 }
 
 li {

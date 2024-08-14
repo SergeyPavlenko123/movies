@@ -3,7 +3,7 @@ $accentColor: #ff6b01;
 
 $headerMainColor: #ffffff;
 
-$mainFont: 'Roboto', sans-serif;
+$mainFont: "Roboto", sans-serif;
 
 $mobile: 320px;
 $tablet: 768px;
@@ -20,9 +20,6 @@ $desktop: 1024px;
 
 body {
   font-family: $mainFont;
-  display: grid;
-  min-height: 100vh;
-  grid-auto-rows: auto 1fr auto;
 }
 
 li {
