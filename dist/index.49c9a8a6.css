@@ -3,7 +3,9 @@
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  flex-direction: column;
+  height: 100vh;
+  display: flex;
 }
 
 li {
@@ -29,10 +31,6 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-body {
-  margin: 0;
 }
 
 .header {
@@ -337,108 +335,6 @@ input::placeholder {
   width: auto;
 }
 
-.footer-container {
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (width >= 768px) {
-  .footer-container {
-    max-width: 720px;
-  }
-}
-
-@media screen and (width >= 1024px) {
-  .footer-container {
-    max-width: 980px;
-  }
-}
-
-.footer-text {
-  margin: 0;
-  padding-top: 30px;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: normal;
-}
-
-@media screen and (width <= 767px) {
-  .footer-text {
-    padding-top: 10px;
-  }
-}
-
-.footer-text-first-part {
-  color: #545454;
-  margin: 0;
-  padding-top: 28.71px;
-  padding-right: 3px;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: normal;
-}
-
-@media screen and (width <= 767px) {
-  .footer-text-first-part {
-    text-align: center;
-    padding-right: 0;
-  }
-}
-
-.footer-text-second-part {
-  color: #545454;
-  margin: 0;
-  padding-top: 30px;
-  padding-right: 10px;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: normal;
-}
-
-@media screen and (width <= 767px) {
-  .footer-text-second-part {
-    text-align: center;
-    padding-top: 9.9px;
-  }
-}
-
-.footer-img {
-  padding-top: 33px;
-  padding-right: 10px;
-}
-
-@media screen and (width <= 767px) {
-  .footer-img {
-    padding-top: 11.88px;
-  }
-}
-
-.footer-link {
-  color: #545454;
-  border-bottom: 1px solid #545454;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: none;
-}
-
-.footer-copyrights {
-  display: flex;
-}
-
-@media screen and (width <= 767px) {
-  .footer-copyrights {
-    justify-content: center;
-    align-items: baseline;
-    display: flex;
-  }
-}
-
 footer {
   color: #fff;
   background-color: #1d1c1c;
@@ -455,18 +351,8 @@ footer {
   font-size: 18px;
 }
 
-.footer-img {
-  display: initial;
-  margin: 0 5px;
-  padding: 0;
-}
-
-.footer-link {
-  color: #fff;
-  border-color: #fff;
-}
-
 .main {
+  flex: 1;
   margin-left: auto;
   margin-right: auto;
   padding: 30px 0;
@@ -923,7 +809,6 @@ footer {
   background-image: url("arrow1.01e4706a.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 80px;
   border: none;
   outline: none;
   width: 80px;

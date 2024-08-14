@@ -19,7 +19,9 @@ $desktop: 1024px;
 // }
 
 body {
-  font-family: $mainFont;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 li {
