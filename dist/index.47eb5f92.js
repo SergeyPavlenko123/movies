@@ -587,23 +587,28 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _api = require("./api");
 var _apiDefault = parcelHelpers.interopDefault(_api);
+var _moviesList = require("../templates/moviesList");
+var _moviesListDefault = parcelHelpers.interopDefault(_moviesList);
 const api = new (0, _apiDefault.default)();
-function addGenres(movies, genres) {
-    movies.map(({ genre_ids })=>{
+const moviesWrap = document.querySelector(".home-list");
+const addGenres = (movies, genres)=>{
+    return movies.map(({ genre_ids, ...otherProps })=>{
         let genresNames = genre_ids.map((genreId)=>genres.find(({ id })=>id === genreId).name);
-        console.log(genresNames);
-        console.log("-----------------");
+        return {
+            ...otherProps,
+            genresNames
+        };
     });
-}
-function renderMovies(movies) {
-    console.log("render items! ", movies);
-}
+};
+const renderMovies = (movies)=>{
+    moviesWrap.innerHTML = (0, _moviesListDefault.default)(movies);
+};
 Promise.all([
     api.getPopular(),
     api.getGenres()
 ]).then(([{ results: movies }, { genres }])=>addGenres(movies, genres)).then((result)=>renderMovies(result));
 
-},{"./api":"csPsJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"csPsJ":[function(require,module,exports) {
+},{"./api":"csPsJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../templates/moviesList":"5v29t"}],"csPsJ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 class ApiService {
@@ -653,6 +658,26 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["670yk","g54gV"], "g54gV", "parcelRequire20dd")
+},{}],"5v29t":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+exports.default = moviesList = (arr)=>{
+    let template = "";
+    arr.forEach((element)=>{
+        let { title, poster_path, genresNames, release_date, vote_average, id } = element;
+        template += `<li class="home-list-card">
+                    <img class="home-list-img" src="https://image.tmdb.org/t/p/w342${poster_path}" alt="movie picture" data-id=${id}>
+                    <p class="home-card-list-title">${title}</p>
+                    <div class="card-list">
+                        <p class="home-card-category">${genresNames.join(", ")} | ${release_date}"</p>
+                        <p class="home-card-rating">${vote_average}</p>
+                    </div>
+                 </li>
+        `;
+    });
+    return template;
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["670yk","g54gV"], "g54gV", "parcelRequire20dd")
 
 //# sourceMappingURL=index.47eb5f92.js.map

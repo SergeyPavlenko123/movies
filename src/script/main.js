@@ -1,19 +1,23 @@
 import ApiService from "./api";
+import moviesList from "../templates/moviesList";
 
 const api = new ApiService();
 
-function addGenres(movies, genres) {
-  movies.map(({ genre_ids }) => {
+const moviesWrap = document.querySelector(".home-list");
+
+const addGenres = (movies, genres) => {
+  return movies.map(({ genre_ids, ...otherProps }) => {
     let genresNames = genre_ids.map(
       (genreId) => genres.find(({ id }) => id === genreId).name
     );
-    console.log(genresNames);
-    console.log("-----------------");
+
+    return { ...otherProps, genresNames };
   });
-}
-function renderMovies(movies) {
-  console.log("render items! ", movies);
-}
+};
+const renderMovies = (movies) => {
+  moviesWrap.innerHTML = moviesList(movies);
+};
+
 Promise.all([api.getPopular(), api.getGenres()])
   .then(([{ results: movies }, { genres }]) => addGenres(movies, genres))
   .then((result) => renderMovies(result));
