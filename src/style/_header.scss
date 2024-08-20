@@ -14,9 +14,10 @@
 
 .header-container {
   display: flex;
-  min-width: 100%;
   justify-content: space-between;
   align-items: center;
+  gap: 15px;
+  min-width: 100%;
   padding: 0 15px;
   @media screen and (min-width: 768px) {
     max-width: 720px;

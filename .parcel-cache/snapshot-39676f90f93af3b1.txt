@@ -1,9 +1,4 @@
-6041
-126C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\removeUnusedNS.js133679314421660552 0
-104C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\LICENSE133679314315768303 0
-58C:\Users\sereg\OneDrive\Desktop\movies_app\dist\index.html133681240876512980 0
-88C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\electron-to-chromium\versions.js133679314267581597 0
-95C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\clipboard.js133679314483762473 0
+6051
 62C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@lezer133679314141330186 1
 84C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\types\lib\index.d.ts133679314302954813 0
 69C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-tree\data133679314534567257 1
@@ -34,7 +29,7 @@
 76C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\lmdb\dependencies\v8133679314491083496 1
 46C:\Users\sereg\OneDrive\Desktop\movies_app\src133681209120519292 1
 94C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\svgo\plugins\convertEllipseToCircle.js133679314408387172 0
-47C:\Users\sereg\OneDrive\Desktop\movies_app\dist133681250605616703 1
+47C:\Users\sereg\OneDrive\Desktop\movies_app\dist133685256466038325 1
 99C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\csso\node_modules\css-tree\dist\version.cjs133679314490663645 0
 70C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\svgo\README.md133679314172808817 0
 93C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\cache\lib\IDBCache.browser.js133679314270242740 0
@@ -52,9 +47,6 @@
 81C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@swc\helpers\_\_using_ctx133679314530348367 1
 90C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\source-map-js\lib\binary-search.js133679314247873346 0
 103C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-select\node_modules\domhandler\lib\index.js133679314224315008 0
-100C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\csso\node_modules\css-tree\cjs\utils\url.cjs133679314487940199 0
-66C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-select133679314443143888 1
-98C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\utility-types\dist\functional-helpers.d.ts133679314341825467 0
 78C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-svgo133679314226775203 1
 73C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\nth-check\LICENSE133679314160228259 0
 78C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\js-yaml\bin\js-yaml.js133679314331246734 0
@@ -85,7 +77,7 @@
 99C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\htmlnano\lib\modules\collapseWhitespace.mjs133679314456350204 0
 75C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\type-fest\base.d.ts133679314270212744 0
 87C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\regions\HR.js133679314658147447 0
-57C:\Users\sereg\OneDrive\Desktop\movies_app\src\index.html133681240874045195 0
+57C:\Users\sereg\OneDrive\Desktop\movies_app\src\index.html133682619252995567 0
 103C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\midl.c133679314422872963 0
 75C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\has-flag\index.d.ts133679314172738836 0
 87C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\svgo\plugins\removeEmptyText.js133679314456240239 0
@@ -103,14 +95,14 @@
 62C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\base-x133679314224335029 1
 66C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\nullthrows133679314251032141 1
 81C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@swc\helpers\package.json133679314530681706 0
-64C:\Users\sereg\OneDrive\Desktop\movies_app\src\library-page.html133681226966756234 0
+64C:\Users\sereg\OneDrive\Desktop\movies_app\src\library-page.html133681885433424515 0
 61C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\chalk133679314295914775 1
 102C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\view-transitions.js133679314705712972 0
 75C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\parcel\package.json133679314301526292 0
 101C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-select\node_modules\domutils\package.json133679314349322422 0
 72C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\semver\functions133679314390855121 1
 98C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\style-scoped.js133679314698536467 0
-53C:\Users\sereg\OneDrive\Desktop\movies_app\src\script133681209120514447 1
+53C:\Users\sereg\OneDrive\Desktop\movies_app\src\script133681893121705492 1
 120C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-select\node_modules\dom-serializer\lib\foreignNames.d.ts.map133679314312668557 0
 101C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\x-doc-messaging.js133679314709637145 0
 135C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\lexer\generic-an-plus-b.js133679314415785361 0
@@ -152,7 +144,7 @@
 59C:\Users\sereg\OneDrive\Desktop\movies_app\src\img\logo.png132504987600000000 0
 95C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-tree\lib\syntax\node\index-parse.js133679314520089217 0
 83C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\reporter-tracer\lib133679314174618490 1
-64C:\Users\sereg\OneDrive\Desktop\movies_app\src\style\_btnUp.scss133681242381447865 0
+64C:\Users\sereg\OneDrive\Desktop\movies_app\src\style\_btnUp.scss133681884643530815 0
 85C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-tree\lib\lexer\generic.js133679314517853142 0
 87C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-tree\lib\syntax\node\Raw.js133679314530008483 0
 84C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\node-addon-api\noexcept.gypi133679314250992144 0
@@ -165,7 +157,7 @@
 91C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\postcss-value-parser\lib\index.d.ts133679314309251092 0
 86C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@swc\helpers\cjs\_defaults.cjs133679314385714468 0
 85C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\update-browserslist-db\cli.js133679314188342518 0
-65C:\Users\sereg\OneDrive\Desktop\movies_app\src\style\_header.scss133681246156833777 0
+65C:\Users\sereg\OneDrive\Desktop\movies_app\src\style\_header.scss133681883742056333 0
 95C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\shadowdom.js133679314697083391 0
 68C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite133679314710459565 1
 115C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\msgpackr-extract\node_modules\detect-libc\lib\filesystem.js133679314198072076 0
@@ -177,7 +169,7 @@
 90C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\sass\types\legacy\plugin_this.d.ts133681062651102665 0
 87C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\regions\SI.js133679314697173853 0
 104C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@swc\helpers\esm\_is_native_reflect_construct.js133679314499224976 0
-68C:\Users\sereg\OneDrive\Desktop\movies_app\src\style\_main-page.scss133681250604581269 0
+68C:\Users\sereg\OneDrive\Desktop\movies_app\src\style\_main-page.scss133682620037493427 0
 134C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\pseudo-selectors\aliases.js133679314184715691 0
 93C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-tree\lib\syntax\node\Dimension.js133679314516456690 0
 73C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\svgo\package.json133679314381012401 0
@@ -196,6 +188,24 @@
 97C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\cosmiconfig\dist\getPropertyByPath.js.map133679314372538296 0
 73C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\lmdb\src\misc.cpp133679314475878387 0
 69C:\Users\sereg\OneDrive\Desktop\movies_app\src\style\_pagination.scss133553412599170872 0
+117C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\index.d.ts133679314376127966 0
+86C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\htmlparser2\lib\FeedHandler.js133679314174698467 0
+60C:\Users\sereg\OneDrive\Desktop\movies_app\src\script\api.js133685255423736856 0
+87C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\cosmiconfig\dist\merge.d.ts.map133679314378175697 0
+75C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\weak-lru-cache\dist133679314160281948 1
+93C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\svgo\plugins\moveElemsAttrsToGroup.js133679314421760524 0
+64C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\argparse133679314306883450 1
+75C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@swc\types\index.ts133679314302994696 0
+61C:\Users\sereg\OneDrive\Desktop\movies_app\src\script\main.js133685256462172674 0
+71C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\lmdb\caching.js133679314492508410 0
+87C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\regions\MW.js133679314681780873 0
+71C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\semver\index.js133679314349312385 0
+90C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\lmdb\dependencies\lz4\lib\xxhash.h133679314491883325 0
+97C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\textcontent.js133679314700138610 0
+97C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\user-timing.js133679314703479021 0
+97C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\wbr-element.js133679314707367199 0
+68C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\is-json\test133679314272446891 1
+93C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\utility-types\dist\utility-types.d.ts133679314352895181 0
 61C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\clone133679314260800977 1
 107C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-select\node_modules\domutils\lib\esm\feeds.d.ts133679314408337187 0
 87C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\domutils\lib\traversal.d.ts.map133679314342245356 0
@@ -302,10 +312,6 @@
 78C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\semver\functions\eq.js133679314325374518 0
 65C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@trysound133679314141320189 1
 64C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\anymatch133681062641599864 1
-75C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\weak-lru-cache\dist133679314160281948 1
-93C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\svgo\plugins\moveElemsAttrsToGroup.js133679314421760524 0
-64C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\argparse133679314306883450 1
-75C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@swc\types\index.ts133679314302994696 0
 73C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\binary-extensions133681062641739813 1
 95C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\htmlparser2\lib\WritableStream.d.ts.map133679314322214444 0
 95C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\svgo\plugins\convertOneStopGradients.js133679314409356917 0
@@ -331,6 +337,9 @@
 110C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\mediacapture-fromelement.js133679314681269621 0
 83C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\supports-color\package.json133679314220279158 0
 87C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\regions\GN.js133679314645773306 0
+100C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\csso\node_modules\css-tree\cjs\utils\url.cjs133679314487940199 0
+66C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-select133679314443143888 1
+98C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\utility-types\dist\functional-helpers.d.ts133679314341825467 0
 81C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\weak-lru-cache\index.d.ts133679314309161123 0
 64C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-tree133679314540839137 1
 94C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\msgpackr\dist\index-no-eval.min.js.map133679314379702331 0
@@ -431,7 +440,7 @@
 84C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\transformer-json\lib133679314174598499 1
 82C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\node-addon-api\common.gypi133679314198052258 0
 64C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\mdn-data133679314375572714 1
-72C:\Users\sereg\OneDrive\Desktop\movies_app\dist\library-page.bb54d9e2.js133681240877093233 0
+72C:\Users\sereg\OneDrive\Desktop\movies_app\dist\library-page.bb54d9e2.js133685256465938356 0
 74C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-tree\README.md133679314544307496 0
 67C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\glob-parent133681062641589851 1
 87C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\csso\cjs\clean\TypeSelector.cjs133679314381032420 0
@@ -789,15 +798,6 @@
 115C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\csso\node_modules\css-tree\lib\utils\create-custom-error.js133679314499374928 0
 92C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\utility-types\dist\mapped-types.d.ts133679314351000492 0
 89C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@swc\helpers\_\_iterable_to_array133679314528788840 1
-71C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\lmdb\caching.js133679314492508410 0
-87C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\regions\MW.js133679314681780873 0
-71C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\semver\index.js133679314349312385 0
-90C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\lmdb\dependencies\lz4\lib\xxhash.h133679314491883325 0
-97C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\textcontent.js133679314700138610 0
-97C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\user-timing.js133679314703479021 0
-97C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\wbr-element.js133679314707367199 0
-68C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\is-json\test133679314272446891 1
-93C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\utility-types\dist\utility-types.d.ts133679314352895181 0
 87C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\transformer-postcss\lib133679314304074344 1
 88C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@swc\helpers\cjs\_instanceof.cjs133679314408705372 0
 77C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\posthtml\lib\index.js133679314191819668 0
@@ -933,7 +933,7 @@
 101C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\resource-timing.js133679314692296081 0
 108C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\lmdb\node_modules\node-addon-api\tools\check-napi.js133679314328640952 0
 90C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-tree\lib\syntax\node\Atrule.js133679314492908451 0
-72C:\Users\sereg\OneDrive\Desktop\movies_app\dist\onerlay_768.bdf5a7a5.jpg133681240876652939 0
+72C:\Users\sereg\OneDrive\Desktop\movies_app\dist\onerlay_768.bdf5a7a5.jpg133685256465948355 0
 91C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\transformer-js\package.json133679314296159525 0
 82C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\node-resolver-core133679314296087622 1
 96C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\type-fest\source\fixed-length-array.d.ts133679314336296151 0
@@ -996,7 +996,6 @@
 75C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\dotenv\CHANGELOG.md133679314174588677 0
 75C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-tree\cjs\parser133679314487860222 1
 87C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\type-fest\source\utilities.d.ts133679314384602318 0
-74C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\json5\package.json133679314325324526 0
 107C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_load.1133679314371198730 0
 73C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\tslib\LICENSE.txt133679314331516653 0
 84C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-tree\cjs\utils\ident.cjs133679314415755372 0
@@ -1270,7 +1269,7 @@
 98C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\lmdb\dependencies\lz4\lib\liblz4-dll.rc.in133679314492448402 0
 88C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\htmlnano\lib\presets\ampSafe.mjs133679314452011932 0
 90C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\wasm.js133679314707327216 0
-71C:\Users\sereg\OneDrive\Desktop\movies_app\dist\film-solid.84b0f31e.svg133681240876502985 0
+71C:\Users\sereg\OneDrive\Desktop\movies_app\dist\film-solid.84b0f31e.svg133685256464621114 0
 112C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\msgpackr-extract\node_modules\detect-libc\lib\process.js133679314238642076 0
 96C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-tree\cjs\syntax\node\Declaration.cjs133679314378075729 0
 79C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\svgo\lib\stringifier.js133679314364424344 0
@@ -2207,6 +2206,8 @@
 88C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\lmdb\dependencies\lmdb\libraries133679314227627282 1
 91C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\htmlparser2\lib\WritableStream.d.ts133679314344984895 0
 106C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\COPYRIGHT133679314245432751 0
+126C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\removeUnusedNS.js133679314421660552 0
+104C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\LICENSE133679314315768303 0
 107C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_copy.1133679314362512716 0
 107C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_copy.c133679314387494838 0
 97C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@swc\helpers\_\_skip_first_generator_next133679314529261822 1
@@ -2268,6 +2269,7 @@
 69C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-tree\dist133679314533066767 1
 65C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\json5\lib133679314359276549 1
 94C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\wai-aria.js133679314706494951 0
+74C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\json5\package.json133679314325324526 0
 102C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\css-not-sel-list.js133679314524283957 0
 91C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\touch.js133679314700357269 0
 83C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\reporter-dev-server133679314362572700 1
@@ -2317,7 +2319,7 @@
 67C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\js-yaml\lib133679314375572714 1
 71C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\js-yaml\LICENSE133679314160309085 0
 99C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\server-timing.js133679314696573350 0
-74C:\Users\sereg\OneDrive\Desktop\movies_app\dist\movies_app.59712999.js.map133681240877133221 0
+74C:\Users\sereg\OneDrive\Desktop\movies_app\dist\movies_app.59712999.js.map133681888458312525 0
 76C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\js-yaml\package.json133679314376804505 0
 84C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\transformer-html\src133679314300939635 1
 113C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\csso\node_modules\css-tree\cjs\syntax\node\WhiteSpace.cjs133679314490913614 0
@@ -2417,8 +2419,6 @@
 75C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\htmlparser2\LICENSE133679314160250662 0
 103C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\csso\lib\restructure\prepare\processSelector.js133679314459402811 0
 92C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\htmlparser2\lib\FeedHandler.d.ts.map133679314306573548 0
-117C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\index.d.ts133679314376127966 0
-86C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\htmlparser2\lib\FeedHandler.js133679314174698467 0
 82C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\htmlparser2\lib\index.d.ts133679314333857251 0
 92C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-tree\lib\syntax\config\walker.js133679314533116751 0
 98C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\currentcolor.js133679314541970392 0
@@ -2537,9 +2537,9 @@
 90C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\htmlnano\docs\docusaurus.config.js133679314376932213 0
 82C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\htmlnano\docs\netlify.toml133679314479352431 0
 98C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@swc\helpers\cjs\_class_name_tdz_error.cjs133679314357554201 0
-87C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\htmlnano\docs\package-lock.json133679314395562301 0
-94C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-tree\lib\generator\token-before.js133679314530911638 0
 104C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\csso\node_modules\css-tree\lib\definition-syntax133679314531887122 1
+94C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-tree\lib\generator\token-before.js133679314530911638 0
+87C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\htmlnano\docs\package-lock.json133679314395562301 0
 84C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\electron-to-chromium\LICENSE133679314160327579 0
 81C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\htmlnano\docs\sidebars.js133679314378055732 0
 92C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\webusb.js133679314708877282 0
@@ -2697,6 +2697,9 @@
 85C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\electron-to-chromium\index.js133679314250992144 0
 95C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\core\lib\ParcelConfig.schema.js133679314487820234 0
 86C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\electron-to-chromium\README.md133679314325314533 0
+58C:\Users\sereg\OneDrive\Desktop\movies_app\dist\index.html133685256465938356 0
+88C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\electron-to-chromium\versions.js133679314267581597 0
+95C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\clipboard.js133679314483762473 0
 116C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\clean\Atrule.js133679314315138486 0
 80C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\dotenv-expand\index.d.ts133679314189835775 0
 135C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\definition-syntax\parse.js133679314478176912 0
@@ -2779,6 +2782,7 @@
 87C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\regions\KM.js133679314679426827 0
 83C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\domelementtype\package.json133679314259459074 0
 127C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-select\node_modules\entities\lib\esm\generated\decode-data-xml.d.ts133679314418055391 0
+73C:\Users\sereg\OneDrive\Desktop\movies_app\dist\index.47eb5f92.js.9344.6a133681899091126011 0
 78C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\domelementtype\lib\esm133679314309501021 1
 114C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\csso\node_modules\css-tree\cjs\definition-syntax\parse.cjs133679314470312119 0
 85C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\domelementtype\lib\index.d.ts133679314315838271 0
@@ -3643,7 +3647,7 @@
 75C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\browserslist\cli.js133679314189935745 0
 115C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-svgo\node_modules\svgo\lib\svgo\config.js133679314342285342 0
 107C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-select\node_modules\domutils\lib\stringify.d.ts133679314422802992 0
-72C:\Users\sereg\OneDrive\Desktop\movies_app\dist\Overlay_320.5d62aca1.jpg133681240876173088 0
+72C:\Users\sereg\OneDrive\Desktop\movies_app\dist\Overlay_320.5d62aca1.jpg133685256464581130 0
 111C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-select\node_modules\domutils\lib\stringify.d.ts.map133679314387918005 0
 94C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\minmaxwh.js133679314681368312 0
 105C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\css-select\node_modules\domutils\lib\stringify.js133679314336206181 0
@@ -3851,7 +3855,6 @@
 83C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\cosmiconfig\dist\index.d.ts133679314408307203 0
 87C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\cosmiconfig\dist\index.d.ts.map133679314373611596 0
 85C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\cosmiconfig\dist\index.js.map133679314375736773 0
-87C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\cosmiconfig\dist\merge.d.ts.map133679314378175697 0
 93C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@lmdb\lmdb-win32-x64\node.abi108.node133679314310301452 0
 134C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\addClassesToSVGElement.js133679314312398593 0
 81C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\cosmiconfig\dist\merge.js133679314321354724 0
@@ -4433,6 +4436,7 @@
 101C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\referrer-policy.js133679314692168022 0
 78C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@swc\helpers\_\_update133679314530338373 1
 98C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\rel-noopener.js133679314692188044 0
+65C:\Users\sereg\OneDrive\Desktop\movies_app\dist\index.900caf0b.js133681888723587961 0
 92C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@swc\helpers\src\_async_iterator.mjs133679314530861650 0
 101C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\rest-parameters.js133679314692306070 0
 90C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\ruby.js133679314693165095 0
@@ -4489,7 +4493,7 @@
 91C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\webvr.js133679314708935766 0
 96C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\webworkers.js133679314708968087 0
 91C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\webxr.js133679314708978080 0
-70C:\Users\sereg\OneDrive\Desktop\movies_app\dist\movies_app.59712999.js133681240877103227 0
+70C:\Users\sereg\OneDrive\Desktop\movies_app\dist\movies_app.59712999.js133681888458152574 0
 127C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\config\lexer.js133679314453503072 0
 90C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\caniuse-lite\data\features\woff.js133679314709557046 0
 92C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@swc\helpers\_\_wrap_async_generator133679314530378355 1
@@ -4648,7 +4652,7 @@
 97C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@swc\helpers\_\_create_class\package.json133679314526074749 0
 100C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@swc\helpers\_\_new_arrow_check\package.json133679314528858810 0
 114C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@swc\helpers\_\_iterable_to_array_limit_loose\package.json133679314528718848 0
-68C:\Users\sereg\OneDrive\Desktop\movies_app\dist\overlay.f058d0ca.jpg133681240876193082 0
+68C:\Users\sereg\OneDrive\Desktop\movies_app\dist\overlay.f058d0ca.jpg133685256464621114 0
 108C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@swc\helpers\_\_iterable_to_array_limit\package.json133679314528758845 0
 77C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-css133679314234539897 1
 102C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@swc\helpers\_\_iterable_to_array\package.json133679314528798851 0
@@ -5043,7 +5047,7 @@
 82C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\transformer-js\src133679314251977598 1
 102C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\transformer-js\src\esmodule-helpers.js133679314196902370 0
 99C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\transformer-js\lib\JSTransformer.js133679314243578970 0
-67C:\Users\sereg\OneDrive\Desktop\movies_app\dist\arrow1.01e4706a.png133681240876642943 0
+67C:\Users\sereg\OneDrive\Desktop\movies_app\dist\arrow1.01e4706a.png133681884053675240 0
 85C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\transformer-image\lib133679314262198986 1
 89C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\transformer-image\LICENSE133679314162829140 0
 94C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\transformer-image\package.json133679314306403599 0
@@ -5116,6 +5120,7 @@
 90C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\runtime-service-worker\src133679314192639505 1
 114C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\runtime-service-worker\src\ServiceWorkerRuntime.js133679314197486540 0
 114C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\runtime-service-worker\lib\ServiceWorkerRuntime.js133679314176477399 0
+79C:\Users\sereg\OneDrive\Desktop\movies_app\dist\my-library.fcfc5ddb.jpg.9344.66133681899091126011 0
 89C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\runtime-react-refresh\lib133679314174608492 1
 93C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\runtime-react-refresh\LICENSE133679314163132301 0
 98C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\runtime-react-refresh\package.json133679314229348147 0
@@ -5513,7 +5518,7 @@
 123C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\general.d.ts.map133679314349322422 0
 117C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\general.js133679314295837167 0
 121C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\index.d.ts.map133679314353230485 0
-70C:\Users\sereg\OneDrive\Desktop\movies_app\dist\index.49c9a8a6.css.map133681250605606705 0
+70C:\Users\sereg\OneDrive\Desktop\movies_app\dist\index.49c9a8a6.css.map133685256466028329 0
 115C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\index.js133679314305323950 0
 125C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\procedure.d.ts.map133679314359286551 0
 119C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\procedure.js133679314315038527 0
@@ -5696,6 +5701,7 @@
 129C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\lexer\match-graph.js133679314457611042 0
 123C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\lexer\match.js133679314458364466 0
 132C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\lexer\prepare-tokens.js133679314478982143 0
+66C:\Users\sereg\OneDrive\Desktop\movies_app\dist\arrow.72518621.png133685256465938356 0
 124C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\lexer\search.js133679314486632209 0
 80C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@babel\highlight\LICENSE133679314160262569 0
 127C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\generator\index.js133679314422872963 0
@@ -5757,7 +5763,7 @@
 84C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\logger\src\Logger.js133679314197556750 0
 84C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\logger\lib\Logger.js133679314180696273 0
 73C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\graph\lib133679314356866492 1
-65C:\Users\sereg\OneDrive\Desktop\movies_app\dist\library-page.html133681240876502985 0
+65C:\Users\sereg\OneDrive\Desktop\movies_app\dist\library-page.html133685256464621114 0
 77C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\graph\LICENSE133679314162577857 0
 95C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\graph\test\ContentGraph.test.js133679314330946828 0
 88C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\graph\test\Graph.test.js133679314340009587 0
@@ -5819,7 +5825,7 @@
 107C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\core\test\fixtures\custom-format-infer-type133679314520642327 1
 105C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\core\test\fixtures\custom-format-mismatch133679314520672318 1
 105C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\core\test\fixtures\custom-targets-distdir133679314520712308 1
-71C:\Users\sereg\OneDrive\Desktop\movies_app\dist\my-library.fcfc5ddb.jpg133681240876213074 0
+71C:\Users\sereg\OneDrive\Desktop\movies_app\dist\my-library.fcfc5ddb.jpg133685256464621114 0
 92C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\core\test\fixtures\glob-like133679314351010476 1
 113C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\core\test\fixtures\invalid-target-source-not-file133679314521900156 1
 94C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\@parcel\core\test\fixtures\module-b.js133679314475898380 0
@@ -6033,10 +6039,14 @@
 87C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\.bin\update-browserslist-db.cmd133679314711612412 0
 87C:\Users\sereg\OneDrive\Desktop\movies_app\node_modules\.bin\update-browserslist-db.ps1133679314711602418 0
 74C:\Users\sereg\OneDrive\Desktop\movies_app\dist\arrow1.01e4706a.png.3520.l133681226970370264 0
+69C:\Users\sereg\OneDrive\Desktop\movies_app\dist\index.900caf0b.js.map133681888723607957 0
+73C:\Users\sereg\OneDrive\Desktop\movies_app\dist\library-page.html.9344.67133681899090999331 0
 79C:\Users\sereg\OneDrive\Desktop\movies_app\dist\onerlay_768.bdf5a7a5.jpg.3520.m133681226970370264 0
 74C:\Users\sereg\OneDrive\Desktop\movies_app\dist\search.0dec63ac.png.3520.j133681226970370264 0
-75C:\Users\sereg\OneDrive\Desktop\movies_app\dist\my-library_320.73fb908b.jpg133681240876173088 0
-67C:\Users\sereg\OneDrive\Desktop\movies_app\dist\search.0dec63ac.png133681240876642943 0
-75C:\Users\sereg\OneDrive\Desktop\movies_app\dist\my-library_768.31908b13.jpg133681240876652939 0
-76C:\Users\sereg\OneDrive\Desktop\movies_app\dist\library-page.bb54d9e2.js.map133681240877133221 0
-66C:\Users\sereg\OneDrive\Desktop\movies_app\dist\index.49c9a8a6.css133681250605576711 0
+75C:\Users\sereg\OneDrive\Desktop\movies_app\dist\my-library_320.73fb908b.jpg133685256464591122 0
+65C:\Users\sereg\OneDrive\Desktop\movies_app\dist\index.47eb5f92.js133685256464621114 0
+69C:\Users\sereg\OneDrive\Desktop\movies_app\dist\index.47eb5f92.js.map133685256464653607 0
+66C:\Users\sereg\OneDrive\Desktop\movies_app\dist\index.49c9a8a6.css133685256465938356 0
+67C:\Users\sereg\OneDrive\Desktop\movies_app\dist\search.0dec63ac.png133685256465938356 0
+75C:\Users\sereg\OneDrive\Desktop\movies_app\dist\my-library_768.31908b13.jpg133685256465948355 0
+76C:\Users\sereg\OneDrive\Desktop\movies_app\dist\library-page.bb54d9e2.js.map133685256466028329 0

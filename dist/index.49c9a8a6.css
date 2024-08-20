@@ -56,6 +56,7 @@ img {
 .header-container {
   justify-content: space-between;
   align-items: center;
+  gap: 15px;
   min-width: 100%;
   padding: 0 15px;
   display: flex;
@@ -806,7 +807,7 @@ footer {
   opacity: .7;
   cursor: pointer;
   background-color: #0000;
-  background-image: url("arrow1.01e4706a.png");
+  background-image: url("arrow.72518621.png");
   background-position: center;
   background-repeat: no-repeat;
   border: none;
@@ -825,8 +826,7 @@ footer {
 
 @media screen and (width <= 767px) {
   .btnUp {
-    bottom: 5px;
-    right: 5px;
+    display: none;
   }
 }
 /*# sourceMappingURL=index.49c9a8a6.css.map */
