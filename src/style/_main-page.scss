@@ -1,8 +1,6 @@
 .main {
-  position: relative;
   flex: 1;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   padding: 30px 0;
 
   @media screen and (min-width: $tablet) {
@@ -14,50 +12,44 @@
   }
 }
 
-.home-list {
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
   padding: 0;
   margin: 0;
 
   @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -5px;
-    justify-content: space-evenly;
+    grid-template-columns: repeat(2, 1fr);
   }
-}
-
-.home-list-card {
-  width: 280px;
-  margin: 30px auto;
-
-  @media screen and (min-width: $tablet) {
-    width: calc(50% - 10px);
-    margin: 5px;
-  }
-
   @media screen and (min-width: $desktop) {
-    width: calc(25% - 10px);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
-.home-list-card:hover,
-.home-list-card:focus {
+.movie-list-card {
+  width: 280px;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba($color: #fff, $alpha: 0.8);
+  color: black;
+}
+
+.movie-list-card:hover,
+.movie-list-card:focus {
   cursor: pointer;
 }
 
-.home-card-title {
+.movie-card-title {
   font-weight: 500;
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 16px;
   text-transform: uppercase;
-
-  color: #000000;
-
+  font-family: Roboto;
   margin-block-start: 10px;
   margin-block-end: 5px;
 }
 
-.home-card-сategory {
+.movie-card-сategory {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
@@ -67,13 +59,13 @@
   color: $accentColor;
 }
 
-.home-card-name {
+.movie-card-name {
   text-align: left;
   flex-grow: 1;
   width: 274px;
 }
 
-.home-card-rating {
+.movie-card-rating {
   margin-top: 0;
   margin-bottom: 0;
 }

@@ -14,14 +14,15 @@ $desktop: 1024px;
 *::after {
   box-sizing: border-box;
 }
-// html {
-//   box-sizing: border-box;
-// }
 
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
+  background-image: url(../img/1155.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 li {

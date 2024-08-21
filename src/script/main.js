@@ -3,7 +3,7 @@ import moviesList from "../templates/moviesList";
 
 const api = new ApiService();
 
-const moviesWrap = document.querySelector(".home-list");
+const moviesWrap = document.querySelector(".movie-list");
 
 const addGenres = (movies, genres) => {
   return movies.map(({ genre_ids, ...otherProps }) => {

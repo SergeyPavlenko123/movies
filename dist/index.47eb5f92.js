@@ -590,7 +590,7 @@ var _apiDefault = parcelHelpers.interopDefault(_api);
 var _moviesList = require("../templates/moviesList");
 var _moviesListDefault = parcelHelpers.interopDefault(_moviesList);
 const api = new (0, _apiDefault.default)();
-const moviesWrap = document.querySelector(".home-list");
+const moviesWrap = document.querySelector(".movie-list");
 const addGenres = (movies, genres)=>{
     return movies.map(({ genre_ids, ...otherProps })=>{
         let genresNames = genre_ids.map((genreId)=>genres.find(({ id })=>id === genreId).name);
@@ -665,12 +665,12 @@ exports.default = moviesList = (arr)=>{
     let template = "";
     arr.forEach((element)=>{
         let { title, poster_path, genresNames, release_date, vote_average, id } = element;
-        template += `<li class="home-list-card">
-                    <img class="home-list-img" src="https://image.tmdb.org/t/p/w342${poster_path}" alt="movie picture" data-id=${id}>
-                    <p class="home-card-list-title">${title}</p>
+        template += `<li class="movie-list-card">
+                    <img class="movie-list-img" src="https://image.tmdb.org/t/p/w342${poster_path}" alt="movie picture" data-id=${id}>
+                    <p class="movie-card-title">${title}</p>
                     <div class="card-list">
-                        <p class="home-card-category">${genresNames.join(", ")} | ${release_date}"</p>
-                        <p class="home-card-rating">${vote_average}</p>
+                        <p class="movie-card-category">${genresNames.join(", ")} | ${release_date}"</p>
+                        <p class="movie-card-rating">${vote_average}</p>
                     </div>
                  </li>
         `;

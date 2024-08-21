@@ -1,14 +1,13 @@
 .header {
   background-size: cover;
   background-position: center;
-  background-image: url("../img/Overlay_320.jpg");
+  background: rgba(0, 0, 0, 0.8);
   padding: 30px 0;
+
   @media screen and (min-width: 768px) {
-    background-image: url("../img/onerlay_768.jpg");
     padding: 50px 0;
   }
   @media screen and (min-width: 1024px) {
-    background-image: url(../img/overlay.jpg);
   }
 }
 
@@ -37,7 +36,6 @@
 
 .header-text {
   display: flex;
-  color: $headerMainColor;
   text-align: center;
   font-family: "Roboto";
   &:hover {
