@@ -15,6 +15,7 @@
 .movie-list {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
   gap: 30px;
   padding: 0;
   margin: 0;
@@ -47,25 +48,22 @@
   font-family: Roboto;
   margin-block-start: 10px;
   margin-block-end: 5px;
+  text-align: center;
 }
 
-.movie-card-сategory {
+.movie-card-category {
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.17;
-  margin-top: 0;
-  margin-bottom: 0;
-
-  color: $accentColor;
+  color: black;
+  text-align: end;
 }
-
+.card-list {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
 .movie-card-name {
-  text-align: left;
+  text-align: end;
   flex-grow: 1;
   width: 274px;
-}
-
-.movie-card-rating {
-  margin-top: 0;
-  margin-bottom: 0;
 }

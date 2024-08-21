@@ -11,7 +11,10 @@ export default moviesList = (arr) => {
                         <p class="movie-card-category">${genresNames.join(
                           ", "
                         )} | ${release_date}"</p>
-                        <p class="movie-card-rating">${vote_average}</p>
+                        <p class="movie-card-rating">
+                        <span>Рейтинг</span>
+                          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>  ${vote_average}
+                        </p>
                     </div>
                  </li>
         `;

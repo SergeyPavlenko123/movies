@@ -670,7 +670,10 @@ exports.default = moviesList = (arr)=>{
                     <p class="movie-card-title">${title}</p>
                     <div class="card-list">
                         <p class="movie-card-category">${genresNames.join(", ")} | ${release_date}"</p>
-                        <p class="movie-card-rating">${vote_average}</p>
+                        <p class="movie-card-rating">
+                        <span>\u{420}\u{435}\u{439}\u{442}\u{438}\u{43D}\u{433}</span>
+                          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>  ${vote_average}
+                        </p>
                     </div>
                  </li>
         `;

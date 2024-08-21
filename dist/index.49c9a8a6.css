@@ -331,6 +331,7 @@ input::placeholder {
 }
 
 footer {
+  text-align: center;
   color: #fff;
   background: #000c;
   padding: 30px 0;
@@ -344,6 +345,10 @@ footer {
   text-align: center;
   padding: 0;
   font-size: 18px;
+}
+
+.licence-link {
+  color: #fff;
 }
 
 .main {
@@ -366,6 +371,7 @@ footer {
 
 .movie-list {
   grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
   gap: 30px;
   margin: 0;
   padding: 0;
@@ -398,30 +404,30 @@ footer {
 
 .movie-card-title {
   text-transform: uppercase;
+  text-align: center;
   margin-block: 10px 5px;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
 }
 
-.movie-card-сategory {
-  color: #ff6b01;
-  margin-top: 0;
-  margin-bottom: 0;
+.movie-card-category {
+  color: #000;
+  text-align: end;
   font-size: 12px;
   font-weight: 500;
-  line-height: 1.17;
+}
+
+.card-list {
+  flex-direction: column;
+  align-items: end;
+  display: flex;
 }
 
 .movie-card-name {
-  text-align: left;
+  text-align: end;
   flex-grow: 1;
   width: 274px;
-}
-
-.movie-card-rating {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .header-library-container {
