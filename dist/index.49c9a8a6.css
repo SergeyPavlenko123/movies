@@ -212,8 +212,9 @@ input {
   background-color: #000000a6;
   border: none;
   border-bottom: .5px solid #fff;
+  border-radius: 5px 5px 0 0;
   outline: none;
-  max-width: 350px;
+  width: 350px;
   margin: 0 auto;
   padding: 10px 15px;
   font-size: 14px;
@@ -354,48 +355,25 @@ footer {
 .main {
   flex: 1;
   margin: auto;
-  padding: 30px 0;
-}
-
-@media screen and (width >= 768px) {
-  .main {
-    width: 720px;
-  }
-}
-
-@media screen and (width >= 1024px) {
-  .main {
-    width: 980px;
-  }
+  padding: 50px 0;
 }
 
 .movie-list {
-  grid-template-columns: repeat(1, 1fr);
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   margin: 0;
   padding: 0;
-  display: grid;
-}
-
-@media screen and (width >= 768px) {
-  .movie-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (width >= 1024px) {
-  .movie-list {
-    grid-template-columns: repeat(4, 1fr);
-  }
+  display: flex;
 }
 
 .movie-list-card {
   color: #000;
-  background: #fffc;
+  background: #ffffffe6;
   border-radius: 10px;
   width: 280px;
   padding: 10px;
+  box-shadow: 0 0 5px 2px #000000bf;
 }
 
 .movie-list-card:hover, .movie-list-card:focus {
@@ -419,8 +397,9 @@ footer {
 }
 
 .card-list {
-  flex-direction: column;
-  align-items: end;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   display: flex;
 }
 
@@ -428,6 +407,13 @@ footer {
   text-align: end;
   flex-grow: 1;
   width: 274px;
+}
+
+.movie-card-rating {
+  color: #fff;
+  background: #ff6b01;
+  border-radius: 5px;
+  padding: 3px;
 }
 
 .header-library-container {

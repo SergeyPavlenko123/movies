@@ -12,8 +12,7 @@ export default moviesList = (arr) => {
                           ", "
                         )} | ${release_date}"</p>
                         <p class="movie-card-rating">
-                        <span>Рейтинг</span>
-                          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>  ${vote_average}
+                           ${vote_average}
                         </p>
                     </div>
                  </li>

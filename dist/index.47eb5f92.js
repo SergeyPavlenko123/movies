@@ -589,8 +589,9 @@ var _api = require("./api");
 var _apiDefault = parcelHelpers.interopDefault(_api);
 var _moviesList = require("../templates/moviesList");
 var _moviesListDefault = parcelHelpers.interopDefault(_moviesList);
-const api = new (0, _apiDefault.default)();
+// refs
 const moviesWrap = document.querySelector(".movie-list");
+// functions
 const addGenres = (movies, genres)=>{
     return movies.map(({ genre_ids, ...otherProps })=>{
         let genresNames = genre_ids.map((genreId)=>genres.find(({ id })=>id === genreId).name);
@@ -603,10 +604,17 @@ const addGenres = (movies, genres)=>{
 const renderMovies = (movies)=>{
     moviesWrap.innerHTML = (0, _moviesListDefault.default)(movies);
 };
+const onMovieClick = (e)=>{
+    if (!e.target.classList.contains("movie-list-img")) return;
+    console.log(e.target.dataset.id);
+};
+// init
+const api = new (0, _apiDefault.default)();
 Promise.all([
     api.getPopular(),
     api.getGenres()
 ]).then(([{ results: movies }, { genres }])=>addGenres(movies, genres)).then((result)=>renderMovies(result));
+moviesWrap.addEventListener("click", onMovieClick);
 
 },{"./api":"csPsJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../templates/moviesList":"5v29t"}],"csPsJ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -671,8 +679,7 @@ exports.default = moviesList = (arr)=>{
                     <div class="card-list">
                         <p class="movie-card-category">${genresNames.join(", ")} | ${release_date}"</p>
                         <p class="movie-card-rating">
-                        <span>\u{420}\u{435}\u{439}\u{442}\u{438}\u{43D}\u{433}</span>
-                          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>  ${vote_average}
+                           ${vote_average}
                         </p>
                     </div>
                  </li>
