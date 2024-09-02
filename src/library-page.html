@@ -14,54 +14,60 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css" integrity="sha512-i1b/nzkVo97VN5WbEtaPebBG8REvjWeqNclJ6AItj7msdVcaveKrlIIByDpvjk5nwHjXkIqGZscVxOrTb9tsMA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/main.scss" />
-    <title>Document</title>
+    <script src="./script/main.js" type="module" defer></script>
+    <title>Movies</title>
   </head>
   <body>
     <header class="header">
-      <div class="header-container">
-        <h1 class="header-text">
-          <a class="header-link" href="/">
-            <img
-              class="header-img"
-              src="./img/film-solid.svg"
-              alt="logo"
-              width="22"
-            />
-            <span>Movies</span></a
-          >
-        </h1>
-        <form action="" class="header-form">
-          <div class="group">
-            <input
-              id="query-input"
-              type="text"
-              required
-              placeholder="Movie search"
-              name="query"
-            />
-            <span class="bar"></span>
-            <p class="query-warning visually-hidden">
-              search result not sucessful. Enter the coreect movie name.
-            </p>
+          <div class="container">
+            <h1 class="header-text">
+              <a class="header-link" href="/">
+                <img
+                  class="header-img"
+                  src="./img/film-solid.svg"
+                  alt="logo"
+                  width="22"
+                />
+                <span>Movies</span></a
+              >
+            </h1>
+            <form action="" class="header-form">
+              <div class="group">
+                <input
+                  id="query-input"
+                  type="text"
+                  required
+                  placeholder="Movie search"
+                  name="query"
+                />
+                <span class="bar"></span>
+                <p class="query-warning visually-hidden">
+                  search result not sucessful. Enter the coreect movie name.
+                </p>
+              </div>
+            </form>
+            <nav class="nav-container">
+              <a href="/" class="header-link">Home</a>
+              <a href="./library-page.html" class="header-link current">my library</a>
+            </nav>
           </div>
-        </form>
-        <nav class="nav-container">
-          <a href="/" class="header-link
-          ">Home</a>
-          <a href="./library-page.html" class="header-link current">my library</a>
-        </nav>
+        </div>
       </div>
-    </div>
-  </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <div class="container">
+      </div>
+    </main>
     <footer>
       <div class="footer-container">
         <p class="footer-text">&copy 2024 | All Rights Reserved </p>
       </div>
+      <a href="https://ru.freepik.com/free-vector/seamless-pattern-with-cinema-elements_8084124.htm#fromView=keyword&page=1&position=2&uuid=bc7901e5-a33e-4f78-b1fe-ac858d4d8532" class="licence-link">Изображение от dgim-studio на Freepik</a>
     </footer>
-    <button class="btnUp ">
+    <button class="btnUp">
     </button>
   </body>
 </html>

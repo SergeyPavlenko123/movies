@@ -16,9 +16,12 @@ $desktop: 1024px;
 }
 
 body {
+  height: 100%;
+}
+
+body {
   display: flex;
   flex-direction: column;
-  height: 100%;
   background-image: url(../img/1155.jpg);
   background-repeat: no-repeat;
   background-size: cover;

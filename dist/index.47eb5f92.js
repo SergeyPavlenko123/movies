@@ -589,8 +589,12 @@ var _api = require("./api");
 var _apiDefault = parcelHelpers.interopDefault(_api);
 var _moviesList = require("../templates/moviesList");
 var _moviesListDefault = parcelHelpers.interopDefault(_moviesList);
+var _movieDetails = require("../templates/movie-details");
+var _movieDetailsDefault = parcelHelpers.interopDefault(_movieDetails);
 // refs
 const moviesWrap = document.querySelector(".movie-list");
+const modalWrap = document.querySelector(".backdrop");
+// localstorage
 // functions
 const addGenres = (movies, genres)=>{
     return movies.map(({ genre_ids, ...otherProps })=>{
@@ -601,12 +605,24 @@ const addGenres = (movies, genres)=>{
         };
     });
 };
+// ------------------------------------------
 const renderMovies = (movies)=>{
     moviesWrap.innerHTML = (0, _moviesListDefault.default)(movies);
 };
+// -------------------------------------------
 const onMovieClick = (e)=>{
     if (!e.target.classList.contains("movie-list-img")) return;
-    console.log(e.target.dataset.id);
+    api.getMovieById(e.target.dataset.id);
+    getAndRenderMovieDetails(e.target.dataset.id);
+};
+// -------------------------------------------
+const getAndRenderMovieDetails = async (movieId)=>{
+    const data = await api.getMovieById(movieId);
+    console.log(data);
+    modalWrap.innerHTML = (0, _movieDetailsDefault.default)(data);
+    // add storage buttons clicks
+    // open modal
+    modalWrap.classList.remove("visually-hidden");
 };
 // init
 const api = new (0, _apiDefault.default)();
@@ -616,7 +632,7 @@ Promise.all([
 ]).then(([{ results: movies }, { genres }])=>addGenres(movies, genres)).then((result)=>renderMovies(result));
 moviesWrap.addEventListener("click", onMovieClick);
 
-},{"./api":"csPsJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../templates/moviesList":"5v29t"}],"csPsJ":[function(require,module,exports) {
+},{"./api":"csPsJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../templates/moviesList":"5v29t","../templates/movie-details":"56u5B"}],"csPsJ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 class ApiService {
@@ -625,13 +641,16 @@ class ApiService {
         this.key = "3ecd3cf96c721059d15f3a2eb08a11b7";
         this.lang = "uk-UA";
         this.page = 1;
-        this.params = `api_key=${this.key}&language=${this.lang}&page=${this.page}`;
+        this.params = `api_key=${this.key}&language=${this.lang}`;
     }
     getPopular() {
-        return fetch(`${this.baseUrl}/movie/popular?${this.params}`).then((res)=>res.json()).then((data)=>data);
+        return fetch(`${this.baseUrl}/movie/popular?${this.params}&&page=${this.page}`).then((res)=>res.json()).then((data)=>data);
     }
     getGenres() {
         return fetch(`${this.baseUrl}/genre/movie/list?${this.params}`).then((res)=>res.json()).then((data)=>data);
+    }
+    getMovieById(movieId) {
+        return fetch(`${this.baseUrl}/movie/${movieId}?${this.params}`).then((res)=>res.json()).then((data)=>data);
     }
 }
 exports.default = ApiService;
@@ -686,6 +705,29 @@ exports.default = moviesList = (arr)=>{
         `;
     });
     return template;
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"56u5B":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+exports.default = movieDetails = (obj)=>{
+    let { poster_path, title, vote_average, release_date, id, overview, tagline, genres } = obj;
+    return `<li class="modal-card">
+            <div class="modal-poster">
+                <img src="https://image.tmdb.org/t/p/w342${poster_path}" alt="movie picture" data-id=${id}>
+            </div>
+            <div class="modal-description">
+              <p class="modal-card-title">${title}</p>
+              <p class="modal-card-genres">${genres.map((el)=>el.name)}</p>
+              <div class="modal-card-category"><span class="movie-card-rating">${vote_average}</span> | <span>${release_date}</span></div>
+              <p>${overview}</p>
+              <div class="modal-description-buttons">
+                <button class="modal-button">Watched</button>
+                <button class="modal-button">Queue</button>
+              </div>
+            </div>
+          </li>
+`;
 };
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["670yk","g54gV"], "g54gV", "parcelRequire20dd")
