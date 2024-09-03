@@ -8,32 +8,49 @@
 
 .modal-card {
   display: flex;
-  flex-direction: column;
-  max-width: 750px;
   margin: auto;
+  max-width: 800px;
   gap: 10px;
-  background-color: white;
   padding: 10px;
   border-radius: 10px;
+  background-color: white;
 }
 .modal-poster {
-  width: 100%;
+  width: 50%;
 }
 .modal-poster img {
   width: 100%;
+  border-radius: 10px;
 }
 .modal-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 50%;
 }
 .modal-card-title {
+  font-weight: 800;
+  text-transform: uppercase;
 }
 .modal-card-genres {
+  font-weight: 500;
 }
 .modal-card-category {
+  font-weight: 500;
 }
-.movie-card-rating {
-}
+
 .modal-description-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 .modal-button {
+  width: 120px;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+}
+.modal-button:hover {
+  background: $accentColor;
+  color: white;
 }
