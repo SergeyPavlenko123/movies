@@ -1,4 +1,6 @@
 .backdrop {
+  display: grid;
+  place-content: center;
   background: rgb(0 0 0 / 80%);
   position: fixed;
   inset: 0;

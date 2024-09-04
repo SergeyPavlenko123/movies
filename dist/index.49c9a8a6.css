@@ -538,8 +538,10 @@ footer {
 
 .backdrop {
   background: #000c;
+  place-content: center;
   margin: 0;
   padding: 10px;
+  display: grid;
   position: fixed;
   inset: 0;
 }
