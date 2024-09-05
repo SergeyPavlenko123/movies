@@ -591,9 +591,12 @@ var _moviesList = require("../templates/moviesList");
 var _moviesListDefault = parcelHelpers.interopDefault(_moviesList);
 var _movieDetails = require("../templates/movie-details");
 var _movieDetailsDefault = parcelHelpers.interopDefault(_movieDetails);
+var _modal = require("./modal");
+var _modalDefault = parcelHelpers.interopDefault(_modal);
 // refs
 const moviesWrap = document.querySelector(".movie-list");
 const modalWrap = document.querySelector(".backdrop");
+const btnUp = document.querySelector(".btnUp");
 // localstorage
 // functions
 const addGenres = (movies, genres)=>{
@@ -618,11 +621,15 @@ const onMovieClick = (e)=>{
 // -------------------------------------------
 const getAndRenderMovieDetails = async (movieId)=>{
     const data = await api.getMovieById(movieId);
-    console.log(data);
     modalWrap.innerHTML = (0, _movieDetailsDefault.default)(data);
-    // add storage buttons clicks
-    // open modal
-    modalWrap.classList.remove("visually-hidden");
+    (0, _modalDefault.default)();
+};
+// -------------------------------------------
+const scrolllUp = ()=>{
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 };
 // init
 const api = new (0, _apiDefault.default)();
@@ -631,8 +638,9 @@ Promise.all([
     api.getGenres()
 ]).then(([{ results: movies }, { genres }])=>addGenres(movies, genres)).then((result)=>renderMovies(result));
 moviesWrap.addEventListener("click", onMovieClick);
+btnUp.onclick = scrolllUp;
 
-},{"./api":"csPsJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../templates/moviesList":"5v29t","../templates/movie-details":"56u5B"}],"csPsJ":[function(require,module,exports) {
+},{"./api":"csPsJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../templates/moviesList":"5v29t","../templates/movie-details":"56u5B","./modal":"cmqWk"}],"csPsJ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 class ApiService {
@@ -729,6 +737,36 @@ exports.default = movieDetails = (obj)=>{
           </li>
 `;
 };
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cmqWk":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+const modalWrap = document.querySelector(".backdrop");
+function getScrollBarWidth() {
+    const documentWidth = document.documentElement.clientWidth;
+    return Math.abs(window.innerWidth - documentWidth);
+}
+function openModal() {
+    modalWrap.classList.remove("visually-hidden");
+    document.body.style.paddingRight = getScrollBarWidth() + "px";
+    document.body.style.overflow = "hidden";
+    modalWrap.addEventListener("click", onBackdropClick);
+    window.addEventListener("keydown", onEscKey);
+}
+function onBackdropClick(e) {
+    if (e.currentTarget === e.target) closeModal();
+}
+function onEscKey(e) {
+    if (e.code === "Escape") closeModal();
+}
+function closeModal() {
+    modalWrap.classList.add("visually-hidden");
+    modalWrap.innerHTML = "";
+    document.body.removeAttribute("style");
+    modalWrap.removeEventListener("click", onBackdropClick);
+    window.removeEventListener("keydown", onEscKey);
+}
+exports.default = openModal;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["670yk","g54gV"], "g54gV", "parcelRequire20dd")
 

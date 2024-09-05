@@ -8,7 +8,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   flex-direction: column;
-  height: 100%;
   display: flex;
 }
 
@@ -549,15 +548,31 @@ footer {
 .modal-card {
   background-color: #fff;
   border-radius: 10px;
+  flex-direction: column;
   gap: 10px;
+  width: 80%;
   max-width: 800px;
   margin: auto;
   padding: 10px;
   display: flex;
 }
 
+@media screen and (width >= 768px) {
+  .modal-card {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+  }
+}
+
 .modal-poster {
-  width: 50%;
+  width: 100%;
+}
+
+@media screen and (width >= 768px) {
+  .modal-poster {
+    width: 50%;
+  }
 }
 
 .modal-poster img {
@@ -567,9 +582,20 @@ footer {
 
 .modal-description {
   flex-direction: column;
-  justify-content: space-around;
-  width: 50%;
+  align-items: center;
+  width: 100%;
   display: flex;
+}
+
+@media screen and (width >= 768px) {
+  .modal-description {
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    width: 50%;
+    margin: auto;
+    display: flex;
+  }
 }
 
 .modal-card-title {
@@ -577,7 +603,12 @@ footer {
   font-weight: 800;
 }
 
-.modal-card-genres, .modal-card-category {
+.modal-card-genres {
+  word-break: break-all;
+  font-weight: 500;
+}
+
+.modal-card-category {
   font-weight: 500;
 }
 

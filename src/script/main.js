@@ -1,10 +1,12 @@
 import ApiService from "./api";
 import moviesList from "../templates/moviesList";
 import movieDetails from "../templates/movie-details";
+import openModal from "./modal";
 
 // refs
 const moviesWrap = document.querySelector(".movie-list");
 const modalWrap = document.querySelector(".backdrop");
+const btnUp = document.querySelector(".btnUp");
 // localstorage
 
 // functions
@@ -38,11 +40,15 @@ const onMovieClick = (e) => {
 
 const getAndRenderMovieDetails = async (movieId) => {
   const data = await api.getMovieById(movieId);
-  console.log(data);
   modalWrap.innerHTML = movieDetails(data);
-  // add storage buttons clicks
-  // open modal
-  modalWrap.classList.remove("visually-hidden");
+  openModal();
+};
+// -------------------------------------------
+const scrolllUp = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 };
 // init
 
@@ -53,3 +59,4 @@ Promise.all([api.getPopular(), api.getGenres()])
   .then((result) => renderMovies(result));
 
 moviesWrap.addEventListener("click", onMovieClick);
+btnUp.onclick = scrolllUp;
