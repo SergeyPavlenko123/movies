@@ -612,6 +612,18 @@ footer {
   font-weight: 500;
 }
 
+.modal-description-text {
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  display: -moz-box;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
 .modal-description-buttons {
   justify-content: center;
   gap: 20px;

@@ -18,7 +18,7 @@ export default movieDetails = (obj) => {
               <p class="modal-card-title">${title}</p>
               <p class="modal-card-genres">${genres.map((el) => el.name)}</p>
               <div class="modal-card-category"><span class="movie-card-rating">${vote_average}</span> | <span>${release_date}</span></div>
-              <p>${overview}</p>
+              <p class="modal-description-text">${overview}</p>
               <div class="modal-description-buttons">
                 <button class="modal-button">Watched</button>
                 <button class="modal-button">Queue</button>
