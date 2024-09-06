@@ -5,23 +5,34 @@ export default class ApiService {
     this.lang = "uk-UA";
     this.page = 1;
     this.params = `api_key=${this.key}&language=${this.lang}`;
+    this.searchString = "";
   }
 
-  getPopular() {
-    return fetch(
+  async getPopular() {
+    const res = await fetch(
       `${this.baseUrl}/movie/popular?${this.params}&&page=${this.page}`
-    )
-      .then((res) => res.json())
-      .then((data) => data);
+    );
+    const data = await res.json();
+    return data;
   }
-  getGenres() {
-    return fetch(`${this.baseUrl}/genre/movie/list?${this.params}`)
-      .then((res) => res.json())
-      .then((data) => data);
+  async getGenres() {
+    const res = await fetch(`${this.baseUrl}/genre/movie/list?${this.params}`);
+    const data = await res.json();
+    return data;
   }
-  getMovieById(movieId) {
-    return fetch(`${this.baseUrl}/movie/${movieId}?${this.params}`)
-      .then((res) => res.json())
-      .then((data) => data);
+  async getMovieById(movieId) {
+    const res = await fetch(`${this.baseUrl}/movie/${movieId}?${this.params}`);
+    const data = await res.json();
+    return data;
+  }
+
+  async getSearchResult(searchString) {
+    this.searchString = encodeURIComponent(searchString);
+
+    const res = await fetch(
+      `${this.baseUrl}/search/movie?query=${this.searchString}&${this.params}${this.page}`
+    );
+    const data = await res.json();
+    return data;
   }
 }

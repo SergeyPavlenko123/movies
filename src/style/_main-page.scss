@@ -62,3 +62,11 @@
   background: $accentColor;
   border-radius: 5px;
 }
+
+.no-result {
+  padding: 20px;
+  color: white;
+  background: rgba($color: #000, $alpha: 0.7);
+  margin: auto;
+  border-radius: 5px;
+}

@@ -2,11 +2,13 @@ import ApiService from "./api";
 import moviesList from "../templates/moviesList";
 import movieDetails from "../templates/movie-details";
 import openModal from "./modal";
+import debounce from "lodash.debounce";
 
 // refs
 const moviesWrap = document.querySelector(".movie-list");
 const modalWrap = document.querySelector(".backdrop");
 const btnUp = document.querySelector(".btnUp");
+const searchInput = document.querySelector(".search");
 // localstorage
 
 // functions
@@ -23,7 +25,9 @@ const addGenres = (movies, genres) => {
 // ------------------------------------------
 
 const renderMovies = (movies) => {
-  moviesWrap.innerHTML = moviesList(movies);
+  movies.length == 0
+    ? (moviesWrap.innerHTML = `<h2 class="no-result">Нічого не знайдено</h2>`)
+    : (moviesWrap.innerHTML = moviesList(movies));
 };
 
 // -------------------------------------------
@@ -44,6 +48,14 @@ const getAndRenderMovieDetails = async (movieId) => {
   openModal();
 };
 // -------------------------------------------
+const onSearchInput = (e) => {
+  if (searchInput.value.length > 2) {
+    Promise.all([api.getSearchResult(searchInput.value), api.getGenres()])
+      .then(([{ results: movies }, { genres }]) => addGenres(movies, genres))
+      .then((result) => renderMovies(result));
+  }
+};
+// -------------------------------------------
 const scrolllUp = () => {
   window.scrollTo({
     top: 0,
@@ -59,4 +71,5 @@ Promise.all([api.getPopular(), api.getGenres()])
   .then((result) => renderMovies(result));
 
 moviesWrap.addEventListener("click", onMovieClick);
+searchInput.addEventListener("input", debounce(onSearchInput, 1500));
 btnUp.onclick = scrolllUp;

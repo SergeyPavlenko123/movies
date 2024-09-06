@@ -399,6 +399,14 @@ footer {
   padding: 3px;
 }
 
+.no-result {
+  color: #fff;
+  background: #000000b3;
+  border-radius: 5px;
+  margin: auto;
+  padding: 20px;
+}
+
 .header-library-container {
   box-sizing: border-box;
   justify-content: space-between;
@@ -628,7 +636,7 @@ footer {
 
 .modal-description-buttons {
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   display: flex;
 }
 
