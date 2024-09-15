@@ -1,14 +1,6 @@
 export default movieDetails = (obj) => {
-  let {
-    poster_path,
-    title,
-    vote_average,
-    release_date,
-    id,
-    overview,
-    tagline,
-    genres,
-  } = obj;
+  let { poster_path, title, vote_average, release_date, id, overview, genres } =
+    obj;
 
   return `<li class="modal-card">
             <div class="modal-poster">
@@ -20,8 +12,11 @@ export default movieDetails = (obj) => {
               <div class="modal-card-category"><span class="movie-card-rating">${vote_average}</span> | <span>${release_date}</span></div>
               <p class="modal-description-text">${overview}</p>
               <div class="modal-description-buttons">
-                <button class="modal-button">Watched</button>
-                <button class="modal-button">Queue</button>
+                <button class="modal-button" data-action="add-to-watched">Watched</button>
+                <div class="watched-popap hidden">  
+                      
+                </div> 
+                <button class="modal-button" data-action="add-to-queue">Queue</button>
               </div>
             </div>
           </li>

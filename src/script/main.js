@@ -9,8 +9,10 @@ const moviesWrap = document.querySelector(".movie-list");
 const modalWrap = document.querySelector(".backdrop");
 const btnUp = document.querySelector(".btnUp");
 const searchInput = document.querySelector(".search");
-// localstorage
 
+// localstorage
+let watchedArray = JSON.parse(localStorage.getItem("WATCHED_KEY")) ?? [];
+let queuedArray = JSON.parse(localStorage.getItem("QUEUE_KEY")) ?? [];
 // functions
 const addGenres = (movies, genres) => {
   return movies.map(({ genre_ids, ...otherProps }) => {
@@ -46,7 +48,40 @@ const getAndRenderMovieDetails = async (movieId) => {
   const data = await api.getMovieById(movieId);
   modalWrap.innerHTML = movieDetails(data);
   openModal();
+
+  document
+    .querySelector('[data-action="add-to-watched"]')
+    .addEventListener("click", () => {
+      const index = watchedArray.indexOf(movieId);
+      const currentBtn = document.querySelector(".watched-popap");
+
+      if (index !== -1) {
+        watchedArray.splice(index, 1);
+        showPopap("added to watched", currentBtn);
+      } else {
+        watchedArray.push(movieId);
+        showPopap("removed from watched", currentBtn);
+      }
+      localStorage.setItem("WATCHED_KEY", JSON.stringify(watchedArray));
+    });
+
+  document
+    .querySelector('[data-action="add-to-queue"]')
+    .addEventListener("click", () => {
+      const index = watchedArray.indexOf(movieId);
+      const currentBtn = document.querySelector(".watched-popap");
+
+      if (index !== -1) {
+        watchedArray.splice(index, 1);
+        showPopap("added to queue", currentBtn);
+      } else {
+        watchedArray.push(movieId);
+        showPopap("removed from queue", currentBtn);
+      }
+      localStorage.setItem("QUEUE_KEY", JSON.stringify(watchedArray));
+    });
 };
+
 // -------------------------------------------
 const onSearchInput = (e) => {
   if (searchInput.value.length > 2) {
@@ -62,6 +97,14 @@ const scrolllUp = () => {
     behavior: "smooth",
   });
 };
+// ------------------------------------------
+function showPopap(text, btn, arr) {
+  btn.style.display = "block";
+  btn.innerHTML = text;
+  setTimeout(() => {
+    btn.style.display = "none";
+  }, 1000);
+}
 // init
 
 const api = new ApiService();
@@ -71,5 +114,5 @@ Promise.all([api.getPopular(), api.getGenres()])
   .then((result) => renderMovies(result));
 
 moviesWrap.addEventListener("click", onMovieClick);
-searchInput.addEventListener("input", debounce(onSearchInput, 1500));
+searchInput.addEventListener("input", debounce(onSearchInput, 1000));
 btnUp.onclick = scrolllUp;

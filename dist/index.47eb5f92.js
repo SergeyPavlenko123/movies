@@ -601,6 +601,8 @@ const modalWrap = document.querySelector(".backdrop");
 const btnUp = document.querySelector(".btnUp");
 const searchInput = document.querySelector(".search");
 // localstorage
+let watchedArray = JSON.parse(localStorage.getItem("WATCHED_KEY")) ?? [];
+let queuedArray = JSON.parse(localStorage.getItem("QUEUE_KEY")) ?? [];
 // functions
 const addGenres = (movies, genres)=>{
     return movies.map(({ genre_ids, ...otherProps })=>{
@@ -626,6 +628,30 @@ const getAndRenderMovieDetails = async (movieId)=>{
     const data = await api.getMovieById(movieId);
     modalWrap.innerHTML = (0, _movieDetailsDefault.default)(data);
     (0, _modalDefault.default)();
+    document.querySelector('[data-action="add-to-watched"]').addEventListener("click", ()=>{
+        const index = watchedArray.indexOf(movieId);
+        const currentBtn = document.querySelector(".watched-popap");
+        if (index !== -1) {
+            watchedArray.splice(index, 1);
+            showPopap("added to watched", currentBtn);
+        } else {
+            watchedArray.push(movieId);
+            showPopap("removed from watched", currentBtn);
+        }
+        localStorage.setItem("WATCHED_KEY", JSON.stringify(watchedArray));
+    });
+    document.querySelector('[data-action="add-to-queue"]').addEventListener("click", ()=>{
+        const index = watchedArray.indexOf(movieId);
+        const currentBtn = document.querySelector(".watched-popap");
+        if (index !== -1) {
+            watchedArray.splice(index, 1);
+            showPopap("added to queue", currentBtn);
+        } else {
+            watchedArray.push(movieId);
+            showPopap("removed from queue", currentBtn);
+        }
+        localStorage.setItem("QUEUE_KEY", JSON.stringify(watchedArray));
+    });
 };
 // -------------------------------------------
 const onSearchInput = (e)=>{
@@ -641,6 +667,14 @@ const scrolllUp = ()=>{
         behavior: "smooth"
     });
 };
+// ------------------------------------------
+function showPopap(text, btn, arr) {
+    btn.style.display = "block";
+    btn.innerHTML = text;
+    setTimeout(()=>{
+        btn.style.display = "none";
+    }, 1000);
+}
 // init
 const api = new (0, _apiDefault.default)();
 Promise.all([
@@ -648,7 +682,7 @@ Promise.all([
     api.getGenres()
 ]).then(([{ results: movies }, { genres }])=>addGenres(movies, genres)).then((result)=>renderMovies(result));
 moviesWrap.addEventListener("click", onMovieClick);
-searchInput.addEventListener("input", (0, _lodashDebounceDefault.default)(onSearchInput, 1500));
+searchInput.addEventListener("input", (0, _lodashDebounceDefault.default)(onSearchInput, 1000));
 btnUp.onclick = scrolllUp;
 
 },{"./api":"csPsJ","../templates/moviesList":"5v29t","../templates/movie-details":"56u5B","./modal":"cmqWk","lodash.debounce":"3JP5n","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"csPsJ":[function(require,module,exports) {
@@ -743,7 +777,7 @@ exports.default = moviesList = (arr)=>{
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 exports.default = movieDetails = (obj)=>{
-    let { poster_path, title, vote_average, release_date, id, overview, tagline, genres } = obj;
+    let { poster_path, title, vote_average, release_date, id, overview, genres } = obj;
     return `<li class="modal-card">
             <div class="modal-poster">
                 <img src="https://image.tmdb.org/t/p/w342${poster_path}" alt="movie picture" data-id=${id}>
@@ -754,8 +788,11 @@ exports.default = movieDetails = (obj)=>{
               <div class="modal-card-category"><span class="movie-card-rating">${vote_average}</span> | <span>${release_date}</span></div>
               <p class="modal-description-text">${overview}</p>
               <div class="modal-description-buttons">
-                <button class="modal-button">Watched</button>
-                <button class="modal-button">Queue</button>
+                <button class="modal-button" data-action="add-to-watched">Watched</button>
+                <div class="watched-popap hidden">  
+                      
+                </div> 
+                <button class="modal-button" data-action="add-to-queue">Queue</button>
               </div>
             </div>
           </li>

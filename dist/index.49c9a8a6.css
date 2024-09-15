@@ -652,6 +652,16 @@ footer {
   background: #ff6b01;
 }
 
+.watched-popap {
+  color: #fff;
+  background: #ff6b01;
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+  position: fixed;
+  top: 10px;
+}
+
 .pagination-buttons {
   text-align: center;
   margin-bottom: 20px;
