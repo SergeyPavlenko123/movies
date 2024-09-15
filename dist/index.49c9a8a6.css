@@ -706,10 +706,4 @@ footer {
 .btnUp:hover {
   opacity: 1;
 }
-
-@media screen and (width <= 767px) {
-  .btnUp {
-    display: none;
-  }
-}
 /*# sourceMappingURL=index.49c9a8a6.css.map */
