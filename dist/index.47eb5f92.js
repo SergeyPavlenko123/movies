@@ -633,10 +633,10 @@ const getAndRenderMovieDetails = async (movieId)=>{
         const currentBtn = document.querySelector(".watched-popap");
         if (index !== -1) {
             watchedArray.splice(index, 1);
-            showPopap("added to watched", currentBtn);
+            showPopap("removed from watched", currentBtn);
         } else {
             watchedArray.push(movieId);
-            showPopap("removed from watched", currentBtn);
+            showPopap("added to watched", currentBtn);
         }
         localStorage.setItem("WATCHED_KEY", JSON.stringify(watchedArray));
     });
@@ -645,10 +645,10 @@ const getAndRenderMovieDetails = async (movieId)=>{
         const currentBtn = document.querySelector(".watched-popap");
         if (index !== -1) {
             watchedArray.splice(index, 1);
-            showPopap("added to queue", currentBtn);
+            showPopap("removed from  queue", currentBtn);
         } else {
             watchedArray.push(movieId);
-            showPopap("removed from queue", currentBtn);
+            showPopap("added to queue", currentBtn);
         }
         localStorage.setItem("QUEUE_KEY", JSON.stringify(watchedArray));
     });
