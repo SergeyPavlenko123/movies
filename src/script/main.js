@@ -100,21 +100,27 @@ const scrolllUp = () => {
   });
 };
 // ------------------------------------------
-function showPopap(text, btn, arr) {
+function showPopap(text, btn) {
   btn.style.display = "block";
   btn.innerHTML = text;
   setTimeout(() => {
     btn.style.display = "none";
   }, 1000);
 }
+// -------------------------------------------
+const pageBtns = () => {
+
+}
+// -------------------------------------------
 // init
 
 const api = new ApiService();
 
-Promise.all([api.getPopular(), api.getGenres()])
+Promise.all([api.getPopular(1), api.getGenres()])
   .then(([{ results: movies }, { genres }]) => addGenres(movies, genres))
   .then((result) => renderMovies(result));
 
 moviesWrap.addEventListener("click", onMovieClick);
 document.querySelector('.header-form').addEventListener("submit", onSearchInput);
 btnUp.onclick = scrolllUp;
+

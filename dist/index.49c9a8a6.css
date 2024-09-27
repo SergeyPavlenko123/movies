@@ -217,8 +217,8 @@ input {
   border-left: none;
   border-right: none;
   border-radius: 0 5px 0 0;
-  max-width: 80px;
-  padding: 8px;
+  max-width: 120px;
+  padding: 10px;
 }
 
 input:focus {
@@ -648,6 +648,33 @@ footer {
   color: #fff;
   cursor: pointer;
   background-color: #ff6b01;
+}
+
+.navigation-btns {
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  display: flex;
+}
+
+.navigation-btns button {
+  color: #fff;
+  cursor: pointer;
+  background: #0009;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  font-family: Roboto;
+}
+
+.current-page {
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  display: flex;
 }
 
 .btnUp {

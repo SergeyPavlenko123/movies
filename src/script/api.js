@@ -8,9 +8,9 @@ export default class ApiService {
     this.searchString = "";
   }
 
-  async getPopular() {
+  async getPopular(page) {
     const res = await fetch(
-      `${this.baseUrl}/movie/popular?${this.params}&&page=${this.page}`
+      `${this.baseUrl}/movie/popular?${this.params}&&page=${page}`
     );
     const data = await res.json();
     return data;
@@ -35,4 +35,5 @@ export default class ApiService {
     const data = await res.json();
     return data;
   }
+  
 }

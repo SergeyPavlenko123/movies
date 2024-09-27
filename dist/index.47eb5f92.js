@@ -667,17 +667,20 @@ const scrolllUp = ()=>{
     });
 };
 // ------------------------------------------
-function showPopap(text, btn, arr) {
+function showPopap(text, btn) {
     btn.style.display = "block";
     btn.innerHTML = text;
     setTimeout(()=>{
         btn.style.display = "none";
     }, 1000);
 }
+// -------------------------------------------
+const pageBtns = ()=>{};
+// -------------------------------------------
 // init
 const api = new (0, _apiDefault.default)();
 Promise.all([
-    api.getPopular(),
+    api.getPopular(1),
     api.getGenres()
 ]).then(([{ results: movies }, { genres }])=>addGenres(movies, genres)).then((result)=>renderMovies(result));
 moviesWrap.addEventListener("click", onMovieClick);
@@ -696,8 +699,8 @@ class ApiService {
         this.params = `api_key=${this.key}&language=${this.lang}`;
         this.searchString = "";
     }
-    async getPopular() {
-        const res = await fetch(`${this.baseUrl}/movie/popular?${this.params}&&page=${this.page}`);
+    async getPopular(page) {
+        const res = await fetch(`${this.baseUrl}/movie/popular?${this.params}&&page=${page}`);
         const data = await res.json();
         return data;
     }
