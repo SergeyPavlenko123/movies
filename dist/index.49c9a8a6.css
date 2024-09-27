@@ -186,6 +186,7 @@ img {
 }
 
 .group {
+  display: flex;
   position: relative;
 }
 
@@ -194,7 +195,7 @@ input {
   background-color: #000000a6;
   border: none;
   border-bottom: .5px solid #fff;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px 0 0;
   outline: none;
   max-width: 350px;
   margin: 0 auto;
@@ -208,62 +209,26 @@ input {
   }
 }
 
-input:focus {
-  outline: none;
+.submit {
+  background-image: url("search-icon.d1314d38.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-left: none;
+  border-right: none;
+  border-radius: 0 5px 0 0;
+  max-width: 80px;
+  padding: 8px;
 }
 
-input::placeholder {
-  color: #fff;
-  background: url("search.0dec63ac.png") 100% no-repeat;
-  width: 20px;
-  height: 20px;
+input:focus {
+  outline: none;
 }
 
 input:hover ~ label, input:focus ~ label, input:valid ~ label {
   color: #ff6b01;
   font-size: 14px;
   top: -15px;
-}
-
-.bar {
-  width: 100%;
-  margin: 0 auto;
-  display: block;
-  position: relative;
-}
-
-@media screen and (width <= 767px) {
-  .bar {
-    max-width: 280px;
-  }
-}
-
-.bar:before, .bar:after {
-  content: "";
-  background: #ff6b01;
-  width: 0;
-  height: 1px;
-  transition: all .25s cubic-bezier(.4, 0, .2, 1);
-  position: absolute;
-  bottom: 0;
-  transform: scaleX(1);
-}
-
-.bar:before {
-  left: 50%;
-}
-
-.bar:after {
-  right: 50%;
-}
-
-input:focus ~ .bar:before, input:focus ~ .bar:after {
-  width: 50%;
-}
-
-input.icon {
-  background: url("search.0dec63ac.png") 0 no-repeat;
-  padding-left: 30px;
 }
 
 .header-top-container {

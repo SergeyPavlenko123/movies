@@ -2,7 +2,7 @@ import ApiService from "./api";
 import moviesList from "../templates/moviesList";
 import movieDetails from "../templates/movie-details";
 import openModal from "./modal";
-import debounce from "lodash.debounce";
+
 
 // refs
 const moviesWrap = document.querySelector(".movie-list");
@@ -84,12 +84,14 @@ const getAndRenderMovieDetails = async (movieId) => {
 
 // -------------------------------------------
 const onSearchInput = (e) => {
+  e.preventDefault();
   if (searchInput.value.length > 2) {
     Promise.all([api.getSearchResult(searchInput.value), api.getGenres()])
       .then(([{ results: movies }, { genres }]) => addGenres(movies, genres))
       .then((result) => renderMovies(result));
   }
 };
+
 // -------------------------------------------
 const scrolllUp = () => {
   window.scrollTo({
@@ -114,5 +116,5 @@ Promise.all([api.getPopular(), api.getGenres()])
   .then((result) => renderMovies(result));
 
 moviesWrap.addEventListener("click", onMovieClick);
-searchInput.addEventListener("input", debounce(onSearchInput, 1000));
+document.querySelector('.header-form').addEventListener("submit", onSearchInput);
 btnUp.onclick = scrolllUp;
