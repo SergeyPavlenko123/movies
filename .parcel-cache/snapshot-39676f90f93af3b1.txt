@@ -1,6 +1,6 @@
 6045
+56C:\Users\HomePc\Desktop\portfolio\movies\dist\index.html133719201017330354 0
 85C:\Users\HomePc\Desktop\portfolio\movies\node_modules\css-tree\lib\syntax\node\Nth.js133718079423118103 0
-56C:\Users\HomePc\Desktop\portfolio\movies\dist\index.html133718991729497157 0
 113C:\Users\HomePc\Desktop\portfolio\movies\node_modules\csso\node_modules\css-tree\lib\utils\create-custom-error.js133718079424511558 0
 145C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\optimizer-htmlnano\node_modules\css-select\lib\pseudo-selectors\subselects.d.ts.map133718079419013428 0
 89C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\workers\lib\web\WebChild.js133718079406531620 0
@@ -30,7 +30,7 @@
 85C:\Users\HomePc\Desktop\portfolio\movies\node_modules\caniuse-lite\data\regions\AX.js133718079406282591 0
 44C:\Users\HomePc\Desktop\portfolio\movies\src133718078895311365 1
 91C:\Users\HomePc\Desktop\portfolio\movies\node_modules\csso\node_modules\css-tree\lib\parser133718079427717351 1
-45C:\Users\HomePc\Desktop\portfolio\movies\dist133718991729507161 1
+45C:\Users\HomePc\Desktop\portfolio\movies\dist133719201146081692 1
 86C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@swc\helpers\_\_array_with_holes133718079421987834 1
 73C:\Users\HomePc\Desktop\portfolio\movies\node_modules\lmdb\src\cursor.cpp133718079409841327 0
 91C:\Users\HomePc\Desktop\portfolio\movies\node_modules\dom-serializer\lib\esm\index.d.ts.map133718079397818315 0
@@ -66,12 +66,12 @@
 85C:\Users\HomePc\Desktop\portfolio\movies\node_modules\lmdb\util\set-optional-deps.cjs133718079409612913 0
 91C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@swc\helpers\_\_sliced_to_array_loose133718079425987903 1
 93C:\Users\HomePc\Desktop\portfolio\movies\node_modules\css-tree\cjs\syntax\node\IdSelector.cjs133718079406856001 0
-55C:\Users\HomePc\Desktop\portfolio\movies\src\index.html133718991651685079 0
+55C:\Users\HomePc\Desktop\portfolio\movies\src\index.html133719200429255950 0
 114C:\Users\HomePc\Desktop\portfolio\movies\node_modules\css-select\node_modules\entities\lib\decode_codepoint.js.map133718079415154816 0
 62C:\Users\HomePc\Desktop\portfolio\movies\node_modules\boolbase133718079397248494 1
 71C:\Users\HomePc\Desktop\portfolio\movies\node_modules\term-size\license133718079389039312 0
 94C:\Users\HomePc\Desktop\portfolio\movies\node_modules\source-map-js\lib\source-map-consumer.js133718079391380364 0
-51C:\Users\HomePc\Desktop\portfolio\movies\src\script133718078895281376 1
+51C:\Users\HomePc\Desktop\portfolio\movies\src\script133719148295603593 1
 69C:\Users\HomePc\Desktop\portfolio\movies\node_modules\detect-libc\bin133718079396518724 1
 68C:\Users\HomePc\Desktop\portfolio\movies\node_modules\clone\clone.js133718079396848624 0
 114C:\Users\HomePc\Desktop\portfolio\movies\node_modules\caniuse-lite\data\features\keyboardevent-getmodifierstate.js133718079429162344 0
@@ -83,7 +83,7 @@
 95C:\Users\HomePc\Desktop\portfolio\movies\node_modules\css-tree\cjs\syntax\node\UnicodeRange.cjs133718079413791956 0
 96C:\Users\HomePc\Desktop\portfolio\movies\node_modules\css-tree\lib\syntax\scope\atrulePrelude.js133718079415854010 0
 126C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\node\Function.js133718079420445619 0
-50C:\Users\HomePc\Desktop\portfolio\movies\src\style133718948431613707 1
+50C:\Users\HomePc\Desktop\portfolio\movies\src\style133719147311973678 1
 54C:\Users\HomePc\Desktop\portfolio\movies\src\templates133718078895321362 1
 78C:\Users\HomePc\Desktop\portfolio\movies\node_modules\csso\cjs\replace\Url.cjs133718079403654447 0
 94C:\Users\HomePc\Desktop\portfolio\movies\node_modules\csso\node_modules\css-tree\cjs\tokenizer133718079423458247 1
@@ -113,10 +113,7 @@
 117C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\optimizer-htmlnano\node_modules\css-select\package.json133718079417973626 0
 93C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\packager-raw\lib\RawPackager.js133718079404416562 0
 75C:\Users\HomePc\Desktop\portfolio\movies\node_modules\csso\cjs\compress.cjs133718079400146670 0
-60C:\Users\HomePc\Desktop\portfolio\movies\src\style\main.scss133718954505482784 0
-64C:\Users\HomePc\Desktop\portfolio\movies\src\style\nav-btns.scss133718990117157873 0
-90C:\Users\HomePc\Desktop\portfolio\movies\node_modules\utility-types\dist\mapped-types.d.ts133718079398987939 0
-81C:\Users\HomePc\Desktop\portfolio\movies\node_modules\supports-color\package.json133718079389525063 0
+60C:\Users\HomePc\Desktop\portfolio\movies\src\style\main.scss133719147411623946 0
 81C:\Users\HomePc\Desktop\portfolio\movies\node_modules\css-tree\lib\utils\ident.js133718079421508664 0
 103C:\Users\HomePc\Desktop\portfolio\movies\node_modules\csso\node_modules\css-tree\lib\tokenizer\index.js133718079426407774 0
 85C:\Users\HomePc\Desktop\portfolio\movies\node_modules\css-tree\lib\lexer\structure.js133718079424024932 0
@@ -136,7 +133,7 @@
 113C:\Users\HomePc\Desktop\portfolio\movies\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mdb_copy.1133718079399794768 0
 122C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\node\Rule.js133718079423458247 0
 74C:\Users\HomePc\Desktop\portfolio\movies\node_modules\json5\lib\index.d.ts133718079399412309 0
-59C:\Users\HomePc\Desktop\portfolio\movies\src\script\main.js133718991465595625 0
+59C:\Users\HomePc\Desktop\portfolio\movies\src\script\main.js133719201144998701 0
 88C:\Users\HomePc\Desktop\portfolio\movies\node_modules\nth-check\lib\esm\compile.d.ts.map133718079396308793 0
 75C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\codeframe\src133718079411701281 1
 122C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\optimizer-svgo\node_modules\svgo\plugins\sortDefsChildren.js133718079420957722 0
@@ -158,7 +155,7 @@
 82C:\Users\HomePc\Desktop\portfolio\movies\node_modules\sass\types\value\string.d.ts133718079407477512 0
 80C:\Users\HomePc\Desktop\portfolio\movies\node_modules\caniuse-lite\data\features133718079435199361 1
 74C:\Users\HomePc\Desktop\portfolio\movies\node_modules\micromatch\README.md133718079394279441 0
-67C:\Users\HomePc\Desktop\portfolio\movies\src\style\_pagination.scss133718078895311365 0
+67C:\Users\HomePc\Desktop\portfolio\movies\src\style\_pagination.scss133719199987435219 0
 92C:\Users\HomePc\Desktop\portfolio\movies\node_modules\utility-types\dist\mapped-types.js.map133718079396338784 0
 71C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@msgpackr-extract133718079523081472 1
 65C:\Users\HomePc\Desktop\portfolio\movies\node_modules\detect-libc133718079396698671 1
@@ -174,10 +171,12 @@
 63C:\Users\HomePc\Desktop\portfolio\movies\node_modules\commander133718079397988256 1
 83C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\runtime-react-refresh133718079403122688 1
 86C:\Users\HomePc\Desktop\portfolio\movies\node_modules\svgo\plugins\removeEmptyAttrs.js133718079408580326 0
-60C:\Users\HomePc\Desktop\portfolio\movies\src\script\modal.js133718078895281376 0
+60C:\Users\HomePc\Desktop\portfolio\movies\src\script\modal.js133719148957278921 0
 116C:\Users\HomePc\Desktop\portfolio\movies\node_modules\css-select\node_modules\domutils\lib\esm\manipulation.d.ts.map133718079420699269 0
 79C:\Users\HomePc\Desktop\portfolio\movies\node_modules\semver\functions\minor.js133718079399197872 0
 71C:\Users\HomePc\Desktop\portfolio\movies\node_modules\csso\dist\csso.js133718079408754778 0
+65C:\Users\HomePc\Desktop\portfolio\movies\src\script\pagination.js133719148445792654 0
+86C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@swc\helpers\scripts\ast_grep.js133718079421448683 0
 73C:\Users\HomePc\Desktop\portfolio\movies\node_modules\browserslist\cli.js133718079396968584 0
 80C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\optimizer-htmlnano133718079406913384 1
 78C:\Users\HomePc\Desktop\portfolio\movies\node_modules\to-regex-range\README.md133718079390540636 0
@@ -832,6 +831,8 @@
 94C:\Users\HomePc\Desktop\portfolio\movies\node_modules\utility-types\dist\functional-helpers.js133718079392380046 0
 85C:\Users\HomePc\Desktop\portfolio\movies\node_modules\caniuse-lite\data\regions\DE.js133718079425242793 0
 90C:\Users\HomePc\Desktop\portfolio\movies\node_modules\cosmiconfig\dist\ExplorerBase.js.map133718079401822272 0
+90C:\Users\HomePc\Desktop\portfolio\movies\node_modules\utility-types\dist\mapped-types.d.ts133718079398987939 0
+81C:\Users\HomePc\Desktop\portfolio\movies\node_modules\supports-color\package.json133718079389525063 0
 120C:\Users\HomePc\Desktop\portfolio\movies\node_modules\csso\node_modules\css-tree\lib\syntax\node\index-parse-selector.js133718079425997901 0
 87C:\Users\HomePc\Desktop\portfolio\movies\node_modules\caniuse-lite\dist\lib\statuses.js133718079433584264 0
 71C:\Users\HomePc\Desktop\portfolio\movies\node_modules\picomatch\LICENSE133718079390160753 0
@@ -1472,7 +1473,7 @@
 79C:\Users\HomePc\Desktop\portfolio\movies\node_modules\semver\functions\clean.js133718079390050789 0
 102C:\Users\HomePc\Desktop\portfolio\movies\node_modules\css-select\node_modules\entities\lib\encode.d.ts133718079420505774 0
 77C:\Users\HomePc\Desktop\portfolio\movies\node_modules\semver\functions\cmp.js133718079390150755 0
-64C:\Users\HomePc\Desktop\portfolio\movies\dist\index.49c9a8a6.css133718990117867269 0
+64C:\Users\HomePc\Desktop\portfolio\movies\dist\index.49c9a8a6.css133719201016700574 0
 79C:\Users\HomePc\Desktop\portfolio\movies\node_modules\node-addon-api\napi-inl.h133718079396868616 0
 85C:\Users\HomePc\Desktop\portfolio\movies\node_modules\caniuse-lite\data\regions\VA.js133718079434356196 0
 123C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\optimizer-htmlnano\node_modules\csso\lib\restructure\index.js133718079420032234 0
@@ -4726,7 +4727,6 @@
 85C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@swc\helpers\src\_ts_values.mjs133718079428543074 0
 81C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@swc\helpers\src\_using.mjs133718079428593052 0
 85C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@swc\helpers\src\_using_ctx.mjs133718079428593052 0
-86C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@swc\helpers\scripts\ast_grep.js133718079421448683 0
 88C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\graph\src\AdjacencyList.js133718079408494635 0
 81C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\package-manager\lib133718079410900925 1
 83C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@swc\helpers\scripts\utils.js133718079421678609 0
@@ -4874,7 +4874,7 @@
 76C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\diagnostic\src133718079408214376 1
 67C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\utils133718079410740972 1
 79C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\watcher-win32-x64133718079399780674 1
-63C:\Users\HomePc\Desktop\portfolio\movies\dist\library-page.html133718989554740456 0
+63C:\Users\HomePc\Desktop\portfolio\movies\dist\library-page.html133719201017330354 0
 69C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\workers133718079407707437 1
 80C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\workers\index.d.ts133718079407737429 0
 73C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\workers\lib133718079407236375 1
@@ -4972,7 +4972,7 @@
 92C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\utils\src\isDirectoryInside.js133718079408224385 0
 88C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\utils\src\openInBrowser.js133718079408630313 0
 79C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\utils\src\path.js133718079408775675 0
-70C:\Users\HomePc\Desktop\portfolio\movies\dist\search-icon.d1314d38.svg133718989553530856 0
+70C:\Users\HomePc\Desktop\portfolio\movies\dist\search-icon.d1314d38.svg133719201016640574 0
 119C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\replace\Dimension.js133718079418238976 0
 91C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\utils\src\progress-message.js133718079409074955 0
 87C:\Users\HomePc\Desktop\portfolio\movies\node_modules\@parcel\utils\src\PromiseQueue.js133718079409174924 0
@@ -6035,12 +6035,12 @@
 67C:\Users\HomePc\Desktop\portfolio\movies\node_modules\.bin\svgo.ps1133718079517258745 0
 81C:\Users\HomePc\Desktop\portfolio\movies\node_modules\.bin\update-browserslist-db133718079517268740 0
 85C:\Users\HomePc\Desktop\portfolio\movies\node_modules\.bin\update-browserslist-db.ps1133718079517258745 0
-63C:\Users\HomePc\Desktop\portfolio\movies\dist\1155.d597784a.jpg133718989554260619 0
-64C:\Users\HomePc\Desktop\portfolio\movies\dist\arrow.72518621.png133718989553330910 0
-69C:\Users\HomePc\Desktop\portfolio\movies\dist\film-solid.84b0f31e.svg133718989553530856 0
-63C:\Users\HomePc\Desktop\portfolio\movies\dist\index.47eb5f92.js133718991465924955 0
-67C:\Users\HomePc\Desktop\portfolio\movies\dist\index.47eb5f92.js.map133718991465944953 0
-68C:\Users\HomePc\Desktop\portfolio\movies\dist\index.49c9a8a6.css.map133718990117877268 0
-69C:\Users\HomePc\Desktop\portfolio\movies\dist\my-library.fcfc5ddb.jpg133718989554170640 0
-73C:\Users\HomePc\Desktop\portfolio\movies\dist\my-library_320.73fb908b.jpg133718989554150646 0
-73C:\Users\HomePc\Desktop\portfolio\movies\dist\my-library_768.31908b13.jpg133718989553310925 0
+64C:\Users\HomePc\Desktop\portfolio\movies\dist\arrow.72518621.png133719201016230705 0
+73C:\Users\HomePc\Desktop\portfolio\movies\dist\my-library_768.31908b13.jpg133719201016240699 0
+69C:\Users\HomePc\Desktop\portfolio\movies\dist\film-solid.84b0f31e.svg133719201016640574 0
+68C:\Users\HomePc\Desktop\portfolio\movies\dist\index.49c9a8a6.css.map133719201016720553 0
+73C:\Users\HomePc\Desktop\portfolio\movies\dist\my-library_320.73fb908b.jpg133719201016890495 0
+69C:\Users\HomePc\Desktop\portfolio\movies\dist\my-library.fcfc5ddb.jpg133719201016920487 0
+63C:\Users\HomePc\Desktop\portfolio\movies\dist\1155.d597784a.jpg133719201017190405 0
+63C:\Users\HomePc\Desktop\portfolio\movies\dist\index.47eb5f92.js133719201146041709 0
+67C:\Users\HomePc\Desktop\portfolio\movies\dist\index.47eb5f92.js.map133719201146081692 0

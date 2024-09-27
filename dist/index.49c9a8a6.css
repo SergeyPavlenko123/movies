@@ -627,37 +627,14 @@ footer {
   top: 10px;
 }
 
-.pagination-buttons {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.pagination-buttons__item {
-  color: #000;
-  background-color: #fff;
-  border: none;
-  border-radius: 5px;
-  outline: none;
-  width: 40px;
-  height: 40px;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-.pagination-buttons__item:hover {
-  color: #fff;
-  cursor: pointer;
-  background-color: #ff6b01;
-}
-
-.navigation-btns {
+.pagination {
   justify-content: center;
   gap: 15px;
   padding: 15px;
   display: flex;
 }
 
-.navigation-btns button {
+.pagination button {
   color: #fff;
   cursor: pointer;
   background: #0009;
@@ -668,6 +645,7 @@ footer {
 }
 
 .current-page {
+  color: #000;
   background-color: #fff;
   border: 1px solid #d3d3d3;
   border-radius: 10px;

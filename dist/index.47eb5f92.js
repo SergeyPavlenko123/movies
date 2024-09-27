@@ -598,6 +598,8 @@ const moviesWrap = document.querySelector(".movie-list");
 const modalWrap = document.querySelector(".backdrop");
 const btnUp = document.querySelector(".btnUp");
 const searchInput = document.querySelector(".search");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
 // localstorage
 let watchedArray = JSON.parse(localStorage.getItem("WATCHED_KEY")) ?? [];
 let queuedArray = JSON.parse(localStorage.getItem("QUEUE_KEY")) ?? [];
@@ -660,7 +662,7 @@ const onSearchInput = (e)=>{
     ]).then(([{ results: movies }, { genres }])=>addGenres(movies, genres)).then((result)=>renderMovies(result));
 };
 // -------------------------------------------
-const scrolllUp = ()=>{
+const scrollUp = ()=>{
     window.scrollTo({
         top: 0,
         behavior: "smooth"
@@ -674,9 +676,31 @@ function showPopap(text, btn) {
         btn.style.display = "none";
     }, 1000);
 }
-// -------------------------------------------
-const pageBtns = ()=>{};
-// -------------------------------------------
+// ------------------------------------------
+function pagination() {
+    let currentPage = +document.querySelector(".current-page").innerHTML;
+    nextBtn.addEventListener("click", ()=>{
+        Promise.all([
+            api.getPopular(currentPage + 1),
+            api.getGenres()
+        ]).then(([{ results: movies }, { genres }])=>addGenres(movies, genres)).then((result)=>renderMovies(result));
+        currentPage = currentPage + 1;
+        document.querySelector(".current-page").innerHTML = currentPage;
+        scrollUp();
+    });
+    prevBtn.addEventListener("click", ()=>{
+        if (currentPage > 1) {
+            Promise.all([
+                api.getPopular(currentPage - 1),
+                api.getGenres()
+            ]).then(([{ results: movies }, { genres }])=>addGenres(movies, genres)).then((result)=>renderMovies(result));
+            currentPage = currentPage - 1;
+            document.querySelector(".current-page").innerHTML = currentPage;
+        } else prevBtn.setAttribute("disabled", "true");
+        scrollUp();
+    });
+}
+// ------------------------------------------
 // init
 const api = new (0, _apiDefault.default)();
 Promise.all([
@@ -685,7 +709,8 @@ Promise.all([
 ]).then(([{ results: movies }, { genres }])=>addGenres(movies, genres)).then((result)=>renderMovies(result));
 moviesWrap.addEventListener("click", onMovieClick);
 document.querySelector(".header-form").addEventListener("submit", onSearchInput);
-btnUp.onclick = scrolllUp;
+btnUp.onclick = scrollUp;
+pagination();
 
 },{"./api":"csPsJ","../templates/moviesList":"5v29t","../templates/movie-details":"56u5B","./modal":"cmqWk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"csPsJ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

@@ -3,13 +3,13 @@ import moviesList from "../templates/moviesList";
 import movieDetails from "../templates/movie-details";
 import openModal from "./modal";
 
-
 // refs
 const moviesWrap = document.querySelector(".movie-list");
 const modalWrap = document.querySelector(".backdrop");
 const btnUp = document.querySelector(".btnUp");
 const searchInput = document.querySelector(".search");
-
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn')
 // localstorage
 let watchedArray = JSON.parse(localStorage.getItem("WATCHED_KEY")) ?? [];
 let queuedArray = JSON.parse(localStorage.getItem("QUEUE_KEY")) ?? [];
@@ -93,7 +93,7 @@ const onSearchInput = (e) => {
 };
 
 // -------------------------------------------
-const scrolllUp = () => {
+const scrollUp = () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
@@ -107,11 +107,36 @@ function showPopap(text, btn) {
     btn.style.display = "none";
   }, 1000);
 }
-// -------------------------------------------
-const pageBtns = () => {
+// ------------------------------------------
+function pagination() {
 
-}
-// -------------------------------------------
+  let currentPage = +document.querySelector('.current-page').innerHTML;
+
+  nextBtn.addEventListener('click',()=>{
+      Promise.all([api.getPopular(currentPage + 1), api.getGenres()])
+      .then(([{ results: movies }, { genres }]) => addGenres(movies, genres))
+      .then((result) => renderMovies(result));
+      currentPage = currentPage + 1;
+      document.querySelector('.current-page').innerHTML = currentPage;
+      scrollUp();
+    });
+
+    prevBtn.addEventListener('click',()=>{
+    if(currentPage > 1) {
+      Promise.all([api.getPopular(currentPage - 1), api.getGenres()])
+      .then(([{ results: movies }, { genres }]) => addGenres(movies, genres))
+      .then((result) => renderMovies(result));
+      currentPage = currentPage - 1;
+      document.querySelector('.current-page').innerHTML = currentPage;
+    } else {
+      prevBtn.setAttribute('disabled','true');
+    }
+    scrollUp()
+    })
+    
+  }
+
+// ------------------------------------------
 // init
 
 const api = new ApiService();
@@ -122,5 +147,5 @@ Promise.all([api.getPopular(1), api.getGenres()])
 
 moviesWrap.addEventListener("click", onMovieClick);
 document.querySelector('.header-form').addEventListener("submit", onSearchInput);
-btnUp.onclick = scrolllUp;
-
+btnUp.onclick = scrollUp;
+pagination();
