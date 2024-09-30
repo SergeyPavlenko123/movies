@@ -641,16 +641,16 @@ const getAndRenderMovieDetails = async (movieId)=>{
         localStorage.setItem("WATCHED_KEY", JSON.stringify(watchedArray));
     });
     document.querySelector('[data-action="add-to-queue"]').addEventListener("click", ()=>{
-        const index = watchedArray.indexOf(movieId);
+        const index = queuedArray.indexOf(movieId);
         const currentBtn = document.querySelector(".watched-popap");
         if (index !== -1) {
-            watchedArray.splice(index, 1);
+            queuedArray.splice(index, 1);
             showPopap("removed from  queue", currentBtn);
         } else {
-            watchedArray.push(movieId);
+            queuedArray.push(movieId);
             showPopap("added to queue", currentBtn);
         }
-        localStorage.setItem("QUEUE_KEY", JSON.stringify(watchedArray));
+        localStorage.setItem("QUEUE_KEY", JSON.stringify(queuedArray));
     });
 };
 // -------------------------------------------
@@ -660,6 +660,7 @@ const onSearchInput = (e)=>{
         api.getSearchResult(searchInput.value),
         api.getGenres()
     ]).then(([{ results: movies }, { genres }])=>addGenres(movies, genres)).then((result)=>renderMovies(result));
+    document.querySelector(".pagination").style.display = "none";
 };
 // -------------------------------------------
 const scrollUp = ()=>{
@@ -789,7 +790,7 @@ exports.default = moviesList = (arr)=>{
                     <img class="movie-list-img" src="https://image.tmdb.org/t/p/w342${poster_path}" alt="movie picture" data-id=${id}>
                     <p class="movie-card-title">${title}</p>
                     <div class="card-list">
-                        <p class="movie-card-category">${genresNames.join(", ")} | ${release_date}"</p>
+                         <p class="movie-card-category">${genresNames.join(", ")} | ${release_date}"</p>
                         <p class="movie-card-rating">
                            ${vote_average}
                         </p>

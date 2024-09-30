@@ -68,17 +68,17 @@ const getAndRenderMovieDetails = async (movieId) => {
   document
     .querySelector('[data-action="add-to-queue"]')
     .addEventListener("click", () => {
-      const index = watchedArray.indexOf(movieId);
+      const index = queuedArray.indexOf(movieId);
       const currentBtn = document.querySelector(".watched-popap");
 
       if (index !== -1) {
-        watchedArray.splice(index, 1);
+        queuedArray.splice(index, 1);
         showPopap("removed from  queue", currentBtn);
       } else {
-        watchedArray.push(movieId);
+        queuedArray.push(movieId);
         showPopap("added to queue", currentBtn);
       }
-      localStorage.setItem("QUEUE_KEY", JSON.stringify(watchedArray));
+      localStorage.setItem("QUEUE_KEY", JSON.stringify(queuedArray));
     });
 };
 
@@ -90,10 +90,11 @@ const onSearchInput = (e) => {
       .then(([{ results: movies }, { genres }]) => addGenres(movies, genres))
       .then((result) => renderMovies(result));
   }
+  document.querySelector('.pagination').style.display="none"
 };
 
 // -------------------------------------------
-const scrollUp = () => {
+  const scrollUp = () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
@@ -149,3 +150,4 @@ moviesWrap.addEventListener("click", onMovieClick);
 document.querySelector('.header-form').addEventListener("submit", onSearchInput);
 btnUp.onclick = scrollUp;
 pagination();
+
